@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap" rel="stylesheet">
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+  <script src="./js/jquery-3.0.0.min.js"></script>
+	<style>
+		body{font-family: 'Noto Sans KR', sans-serif;}
+		/*top_header*/
+		#top_header{width:100%;}
+		#top_header .top_header_inner{width:1170px;height:78px;margin:0 auto;border-bottom:1px solid #eee;}
+		#top_header .top_header_inner h1{position:absolute;left:50%;top:22px;margin-left:-64px;}
+		#top_header .top_header_inner h1 a{display:block;width:128px;height:32px;background:url("./images/logo_pc.png")no-repeat;text-indent:-9999px;}
+		#top_header .top_header_inner .gnb{float:left;margin-top:32px;}
+		#top_header .top_header_inner .gnb li{position:relative;float:left;font-size:14px;color:#444;}
+		#top_header .top_header_inner .gnb li::before{content:'';position:absolute;right:12px;top:4px;width:1px;height:8px;background:#ccc;}
+		#top_header .top_header_inner .gnb li:nth-child(2)::before{background:none;}
+		#top_header .top_header_inner .gnb li a{font-size:14px;color:#444;font-weight:bold;margin-right:29px;}
+		#top_header .top_header_inner .btn{float:right;margin-top:25px;}
+		#top_header .top_header_inner .btn a{display:inline-block;width: 66px;height: 28px;padding:0 14px;border-radius:28px;color:#666;font-size:13px;font-weight:bold;line-height:28px;border:1px solid #ccc;background:url("./images/ico_arr_off.png")no-repeat 90% center;}
+		/*bot_header*/
+		#bot_header{width:100%;}
+		#bot_header .bot_header_inner{width:1170px;height: 61px;margin:0 auto;border-bottom:1px solid #eee;}
+		#bot_header .bot_header_inner .gnb{margin-left:225px;}
+		#bot_header .bot_header_inner .gnb li{float:left;}
+		#bot_header .bot_header_inner .gnb li a{position:relative;display:block;padding:0 55px;height: 61px;line-height:61px;color:#222;font-size:18px;font-weight:bold;text-align:center;}
+		#bot_header .bot_header_inner .gnb li a:hover{color:#ed1c24;}
+		#bot_header .bot_header_inner .gnb li a::after{content:'';position:absolute;left:55px;right:55px;bottom:0;height:3px;background:#ed1c24;display:none;}
+		#bot_header .bot_header_inner .gnb li:hover a::after{display:block;}
+		/*banner*/
+		#banner{width:100%;background:#f6f6f6;}
+		#banner .banner_inner{width:1170px;height:48px;margin:0 auto;}
+		#banner .banner_inner .gnb{float:left;margin-top:16px;}
+		#banner .banner_inner .gnb li{position:relative;float:left;padding:0 30px;font-size:14px;color:#666;font-weight:bold;}
+		#banner .banner_inner .gnb li::before{content:'';position:absolute;right:0;top:0;width:1px;height:16px;background:#ccc}
+		#banner .banner_inner .gnb li a{display:block;font-size:14px;color:#666;font-weight:bold;}
+		#banner .banner_inner .gnb .l_1{padding-left:0;}
+		#banner .banner_inner .gnb .l_3 a{padding-right:27px;background:url("./images/ico_arr_off.png")no-repeat right center;}
+		#banner .banner_inner .gnb .l_3 a:hover{color:#ed1c24;background:url("./images/ico_arr_on.png")no-repeat right center;}
+		/*main*/
+		#main{width:100%;background:#258dd6;}
+		#main .main_inner{width:1170px;height:934px;margin:0 auto;}
+		#main .main_inner h2{font-size:38px;color:#fff;text-align:center;padding:76px 0 46px;font-weight:bold;}
+		#main .main_inner div{float:left;margin-right:36px;margin-bottom:36px;width: 274px;height: 220px;background:#fff;box-shadow:5px 5px 5px rgba(0,0,0,0.2);padding:40px;}
+		#main .main_inner h3{font-size:24px;font-weight:bold;color:#000;margin-bottom:20px;}
+		#main .main_inner h4{font-size:18px;color:#222;line-height:30px;}
+		#main .main_inner .box_1{background:#fff url("./images/inv_info_gate01.jpg")no-repeat 87% 87%;}
+		#main .main_inner .box_2{background:#fff url("./images/inv_info_gate02.jpg")no-repeat 87% 87%;}
+		#main .main_inner .box_3{background:#fff url("./images/inv_info_gate03.jpg")no-repeat 87% 87%;}
+		#main .main_inner .box_4{background:#fff url("./images/inv_info_gate04.jpg")no-repeat 87% 87%;}
+		#main .main_inner .box_5{background:#fff url("./images/inv_info_gate05.jpg")no-repeat 87% 87%;}
+		#main .main_inner .box_6{background:#fff url("./images/inv_info_gate06.jpg")no-repeat 87% 87%;}
+	</style>
+ </head>
+ <body>
+	<div id="top_header">
+		<div class="top_header_inner">
+			<h1><a href="index.html">빙그레 로고</a></h1>
+			<ul class="gnb">
+				<li><a href="#">구매포탈시스템</a></li>
+				<li><a href="#">인재채용</a></li>
+			</ul>
+			<div class="btn">
+				<a href="#">고객센터</a>
+				<a href="#">KOR</a>
+			</div>
+		</div>
+	</div>
+	<div id="bot_header">
+		<div class="bot_header_inner">
+			<ul class="gnb">
+				<li><a href="#">스토리</a></li>
+				<li><a href="#">브랜드</a></li>
+				<li><a href="#">라이브</a></li>
+				<li><a href="#">플래그십스토어</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="banner">
+		<div class="banner_inner">
+			<ul class="gnb">
+				<li class="l_1"><a href="#"><img src="./images/location_home.png" alt="홈"></a></li>
+				<li class="l_2">스토리</li>
+				<li class="l_3"><a href="#">투자정보</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="main">
+		<div class="main_inner">
+			<h2>투자정보</h2>
+			<a href="#">
+				<div class="box_1">
+					<h3>전자공고</h3>
+					<h4>주주총회소집공고 등<br>회사공고를 게시합니다.</h4>
+				</div>
+			</a>
+			<a href="#">
+				<div class="box_2">
+					<h3>공시정보</h3>
+					<h4>보다 빠르고 정확하게<br>빙그레의 공시정보를<br>제공해드립니다.</h4>
+				</div>
+			</a>
+			<a href="#">
+				<div class="box_3">
+					<h3>경영정보</h3>
+					<h4>재무정보 및 경영정보를<br>확인할 수 있습니다.</h4>
+				</div>
+			</a>
+			<a href="#">
+				<div class="box_4">
+					<h3>투자지표</h3>
+					<h4>배당 및 주요경영지표를<br>확인할 수 있습니다.</h4>
+				</div>
+			</a>
+			<a href="#">
+				<div class="box_5">
+					<h3>IR자료실</h3>
+					<h4>다양한 IR자료를 확인할 수 있습니다.</h4>
+				</div>
+			</a>
+			<a href="#">
+				<div class="box_6">
+					<h3>기업지배구조</h3>
+					<h4>이사회,정관,주주총회 등의<br>정보를 확인할 수 있습니다.</h4>
+				</div>
+			</a>
+		</div>
+	</div>
+ </body>
+</html>

@@ -1,0 +1,142 @@
+overflow:visible; -> 기본값
+overflow:hidden; -> 마스크기능
+overflow:auto;    ->스크롤바
+overflow:scroll;  ->가로스크롤 생성
+box-sizing:border-box;
+**css3 명령**
+
+1.shadow(그림자효과)
+	<방법>
+	1.텍스트(글자)에 효과주기
+	  text-shadow:x축 y축 그림자색상;
+	2.블럭요소(박스)에 효과주기
+	  box-shadow:x축 y축 그림자색상;
+2.테두리 라운딩 주기
+	<방법>
+	1.border-radius:값;
+
+
+**transition전환**
+속성값을 일정시간 동안 부드럽게 변경할 때 사용한다
+(중간과정(tween효과)을 만들어 줄 때 사용한다)
+<방법>
+1.transition	    ->중간과정을 만들어라
+2.transition-duration  ->전환시간
+3.transition-delay	    ->지연시간
+4.transition-property ->만들 중간 과정의 속성으로 중간과정을 만들어라
+5.transition-timing-function ->가속도 처리
+<사용>
+이벤트 발생 시 바뀌는 부분에 대해서만 transition을 사용한다
+<shot hand 방식>
+transition:속성 전환시간 지연시간 가속도처리;
+<예>
+:hover
+:focus일 때
+**사파리 브라우저에서 크로스브라우징 처리**
+-webkit-속성
+
+
+**transform**
+css3에서 요소를 변형할때 사용한다
+scale -> 선택요소의 크기를 조절할때 사용
+rotate -> 선택요소를 회전할때 사용
+skew   ->선택요소를 기울일때 사용
+translate ->선택요소를 이동할때 사용
+<scale>
+1.scale()크기조절
+2.scaleX()크기조절
+3.scaleY()크기조절
+<방법>
+1.transform:scale(1);
+<rotate>
+회전할 때
+rotate(deg)
+totateX(deg)
+rotateY(deg)
+기울일 때
+skew(deg)
+skewX(deg)
+skewY(deg)
+이동할 때
+translate(X축,Y축)
+translateX(x축)
+translateY(y축)
+css명령어를 이용하여 중앙으로보낼 때에도 많이 사용
+
+
+**animation**
+이벤트없이 자동적으로 애니메이션을 줄 때 사용한다
+<방법>
+@keyframe 애니메이션대표이름{
+	from{}
+	to{}
+}
+@keyframes 애니메이션대표이름{
+	0%{}
+	25%{}
+	50%{}
+	75%{}
+	100%{}
+}
+
+<명령>
+anumation-name:실행할 애니메이션이름
+anumation-duration:몇초동안실행
+anumation-delay:지연시간
+anumation-directing:reverse:(순서를 바꿈(반전))
+anumation-iteration-count:반복횟수 infinite(반복적용)
+<Short hand>
+animation:실행할 애니메이션이름 5s ease 2s(지연시간) infinite(반복);
+animation-fill-mode:애니메이션상태 유지
+animation-play-state:paused 일시정지
+
+
+1. transform-origin -> 요소의 중심점을 바꿀 때 사용한다.
+	<방법>
+	1.transform:x좌표,y좌표;
+	2.background-size: cover; -> 비례해서 이미지를 꽉 채움
+		               contain; -> 영역안에 이미지가 다 보임
+			size;
+*애니메이션 정지 재생*
+animation-play-state:paused; -> 애니메이션 일시정지
+animation-play-state:running; -> 애니메이션    재생
+
+**그라디언트(gradient)**
+css3 명령으로 그라디언트를 채울 때 사용한다
+<방법>
+linear-gradient(색상,색상),radial-gradient(색상,색상...)
+linear-gradient(방향,색상,색상)
+linear-gradient(각도,색상,색상)
+linear-gradient(각도,색상 50%,색상 50%)
+
+**다단 처리하기**
+<방법>
+1. column-count:컬럼(열의개수)
+2.column-gap:컬럼간격
+3.column-rule:컬럼구분선
+
+**비디오 파일 삽입 및 제어**
+<video>
+	<source src="비디오파일경로" type="video/mp4">
+</video>
+<audio>
+	<source src="오디오파일경로" type="audio/mp4">
+</audio>
+*옵션*
+controls -> control bar 보이기
+autoplay -> 자동실행
+loop -> 반복실행
+width -> 사이즈(크기)
+height -> 사이즈(크기)
+**audio제어**
+자바스크립트 메소드 경우
+제이쿼리 객체를 자바스크립트로 변환해야됨
+$('대상')[0].play();
+$('대상')[0].pause();
+
+
+**flex 박스를 이용한 레이아웃 설정**
+주로 반응형 및 모바일에서 사용하는 layout 설정이다
+1. 부모요소에 display:flex
+2.자식요소에 flex:1,2,3...
+3.flex 해제 flex:none

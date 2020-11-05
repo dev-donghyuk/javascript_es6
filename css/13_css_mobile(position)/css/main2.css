@@ -1,0 +1,51 @@
+@charset "UTF-8";
+body{
+	font-family:'YoonDisplay740','Myriad Pro Light',Helvetica,'돋움',Dotum,verdana,sans-serif;
+}
+#header{
+	position:relative;
+	background:#0d1714;
+	height:50px;
+}
+#header .m_btn{
+	width:17.5px;
+	height:12.5px;
+	background:url("./../images/btn_aside_open.png")no-repeat;
+	border:none;
+	text-indent:-99999px;
+	position:absolute;
+	left:7px;
+	top:18px;
+	cursor:pointer;
+	outline:none;
+	background-size:17.5px 12.5px;
+}
+#header .s_btn{
+	width:17.5px;
+	height:16px;
+	background:url("./../images/btn_sns_open.png")no-repeat;
+	border:none;
+	text-indent:-99999px;
+	position:absolute;
+	right:7px;
+	top:18px;
+	cursor:pointer;
+	outline:none;
+	background-size:17.5px;
+}
+#header h1{
+	position:absolute;
+	left:50%;
+	margin-left:-64px;
+	top:18px;
+	height:;
+}
+#header h1 a img{
+	width:128px;
+	height:14px;
+}
+#header_2{
+	width:100%;
+	height:250px;
+	background:url("./../images/icon.png");
+}

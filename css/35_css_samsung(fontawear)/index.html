@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>폰트어썸(삼성전자)</title>
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+  <link href="./css/all.css" type="text/css" rel="stylesheet">
+  <script src="./js/jquery-3.0.0.min.js"></script>
+	<style>
+		body{font-family: 'SamsungOne 400';}
+		/*--------------------------------------------------header------------*/
+		#header{width:100%;border-bottom:1px solid #ccc;}
+		#header .header_inner{height:65px;width:1440px;margin:0 auto;}
+		/*--------------------------------------------------logo------------*/
+		#header .header_inner .logo{position:absolute;left:50%;top:25px;margin-left:-66px;}
+		#header .header_inner .logo a{display:block;text-indent:-99999px;background:url("./images/svg-logo.svg")no-repeat;width:132px;height:22px;}
+		/*--------------------------------------------------gnb------------*/
+		#header .header_inner .gnb{float:left;margin-right:24px;letter-spacing:-1px;}
+		#header .header_inner .gnb li{float:left;margin-left:15px;}
+		#header .header_inner .gnb li a{position:relative;display:block;font-size:14px;line-height:65px;color:#000;font-weight:bold;}
+		#header .header_inner .gnb li a::after{content:'';height:4px;position:absolute;left:50%;right:0;bottom:0px;background:#162d9a;width:0;transition:all 0.3s ease;}
+		#header .header_inner .gnb li a:hover{color:#162d9a;}
+		#header .header_inner .gnb li:hover a::after{left:1px;width:100%;}
+		/*--------------------------------------------------depth2------------*/
+		/*--------------------------------------------------util------------*/
+		#header .header_inner .util{float:right;margin-right:24px;}
+		#header .header_inner .util li{float:left;padding:0 12px;}
+		#header .header_inner .util li a{position:relative;display:block;font-size:14px;color:#000;height:65px;line-height:65px;font-weight:bold;}
+		#header .header_inner .util li a:hover{color:#162d9a;}
+		#header .header_inner .util li a::after{content:'';height:4px;position:absolute;left:50%;right:0;top:63px;background:#162d9a;width:0;transition: all 0.3s ease;}
+		#header .header_inner .util li:hover a::after{width:100%;left:2px;}
+		#header .header_inner .util li:nth-child(3):hover a::after{background:none;}
+		#header .header_inner .util li a i{line-height:65px;}
+		#header .header_inner .util li a span{display:block;position:absolute;top:-99999px;}
+		#header .header_inner .util li .icon{font-size:21px;}
+		#header .header_inner .util li .icon:hover{color:#000;}
+	</style>
+ </head>
+ <body>
+	<div>
+	</div>
+	<div id="header">
+		<div class="header_inner">
+			<h1 class="logo"><a href="index.html">삼성로고</a></h1>
+			<ul class="gnb">
+				<li><a href="#">모바일</a></li>
+				<li><a href="#">TV</a></li>
+				<li><a href="#">가전</a></li>
+				<li><a href="#">IT</a></li>
+				<li><a href="#">음향</a></li>
+				<li><a href="#">이벤트</a></li>
+				<li><a href="#">큐레이션샵</a></li>
+			</ul>
+			<ul class="util">
+				<li><a href="#">스토리</a></li>
+				<li><a href="#">고객지원</a></li>
+				<li><a href="#">비즈니스<i class="fas fa-external-link-alt"></i></a></li>
+				<li><a href="#" class="icon"><span>사용자</span><i class="far fa-user"></i></a></li>
+				<li><a href="#" class="icon"><span>장바구니</span><i class="fas fa-shopping-cart"></i></a></li>
+				<li><a href="#" class="icon"><span>검색</span><i class="fas fa-search"></i></a></li>
+			</ul>
+		</div>
+	</div>
+ </body>
+</html>

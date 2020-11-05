@@ -1,0 +1,69 @@
+<!Doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+  <script src="./js/jquery-3.0.0.min.js"></script>
+  <style>
+  	#section_1{width: 790px;margin:150px auto 0;border:5px solid #ccc;}
+  	#section_1 .list{overflow:hidden;}
+  	#section_1 .list li{float:left;margin:0 20px 20px 0;position: relative;overflow:hidden;}
+  	#section_1 .list li:nth-child(3n){margin-right:0;}
+  	#section_1 .list li:nth-child(n+3){margin-bottom:0;}
+  	#section_1 .list li .cover{position: absolute;left: 0;bottom:-200px;width:250px;height:200px;line-height:200px;text-align:center;background:rgba(0,250,154,0.5);color:#fff;font-weight:bold;font-size:26px;}
+  </style>
+ </head>
+ <body>
+	<div id="section_1">
+		<ul class="list">
+			<li>
+				<a href="javascript:;">
+					<div class="cover">Caption:작품1</div>
+					<img src="https://via.placeholder.com/250x200" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="cover">Caption:작품1</div>
+					<img src="https://via.placeholder.com/250x200" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="cover">Caption:작품1</div>
+					<img src="https://via.placeholder.com/250x200" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="cover">Caption:작품1</div>
+					<img src="https://via.placeholder.com/250x200" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="cover">Caption:작품1</div>
+					<img src="https://via.placeholder.com/250x200" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<div class="cover">Caption:작품1</div>
+					<img src="https://via.placeholder.com/250x200" alt="">
+				</a>
+			</li>
+		</ul>
+	</div>
+	<script>
+		$(function(){
+			$('#section_1 .list li').mouseenter(function(){
+				$(this).find('.cover').stop().animate({'bottom':0},300);
+			});
+			$('#section_1 .list li').mouseleave(function(){
+				$(this).find('.cover').stop().animate({'bottom':-200},300);
+			});
+		});
+	</script>
+ </body>
+</html>

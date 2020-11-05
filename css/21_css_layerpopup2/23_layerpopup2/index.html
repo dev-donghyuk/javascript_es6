@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1180">
+  <title>layerpopup kim.ka.ne</title>
+  <script src="./js/jquery-3.0.0.min.js"></script>
+  <style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	body{
+		height:2000px;
+	}
+	#wrap{
+		min-width:1180px;
+	}
+	.header{
+		position:fixed;
+		width:100%;
+		height:100px;
+		background:#fff;
+		padding:0 36px;
+	}
+	.header h1{
+		float:left;
+		margin-top:21px;
+	}
+	.main{
+		padding-top:100px;
+	}
+	.main .main_slider{
+		height:647px;
+		background:url("./images/818c6ee8-4fd7-41b7-84d3-cf3b4ca3e799.jpg") no-repeat center top;
+	}
+	#popup{
+		position:fixed;
+		width:100%;
+		height:100%;
+		background:rgba(0,0,0,0.9);
+		z-index:10;
+	}
+	#popup .popup_inner{
+		position:absolute;
+		left:50%;
+		top:50%;
+		margin:-350px 0 0 -670px;
+	}
+	#popup .popup_inner .btn_close{
+		position:absolute;
+		right:0;
+		top:-38px;
+		text-indent:-99999px;
+		background:url("./images/popup_x.png") no-repeat;
+		width:38px;
+		height:38px;
+		background-size:38px;
+		border:none;
+		outline:none;
+		cursor:pointer;
+	}
+  </style>
+ </head>
+ <body>
+	<div id="wrap">
+	 <div id="popup">
+		<div class="popup_inner">
+			<img src="./images/hero_me5Hc_2019_04_19_17_46_42.gif" alt="팝업">
+			<button type="button" class="btn_close">닫기</button>
+		</div>
+	 </div>
+		<div class="header">
+			<h1><a href="#"><img src="./images/bi.png" alt="김가네"></a></h1>
+		</div>
+		<div class="main">
+			<div class="main_slider">
+			</div>
+		</div>
+	</div>
+	<script>
+	$(function(){
+		$('.btn_close').click(function(){
+		$('#popup').fadeOut(8000);
+		});
+	});
+	</script>
+ </body>
+</html>

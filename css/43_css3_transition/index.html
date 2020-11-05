@@ -1,0 +1,26 @@
+<!Doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>transition</title>
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+  <script src="./js/jquery-3.0.0.min.js"></script>
+  <style>
+  	div{width: 100px;height: 100px;background:#5587ED;margin-bottom:20px;transition:all 0.2s ease;}
+  	div:hover{border-radius:50%;background:#F15F5F;}
+  	.div1{transition-timing-function:linear;}
+  	.div2{transition-timing-function:ease;}
+  	.div3{transition-timing-function:ease-in;}
+  	.div4{transition-timing-function:ease-out;}
+  	.div5{transition-timing-function:ease-in-out;}
+  </style>
+ </head>
+ <body>
+	<div></div>
+	<div class="div1">linear</div>
+	<div class="div2">ease</div>
+	<div class="div3">ease-in</div>
+	<div class="div4">ease-out</div>
+	<div class="div5">ease-in-out</div>
+ </body>
+</html>

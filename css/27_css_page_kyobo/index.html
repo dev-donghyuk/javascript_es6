@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>교보문고</title>
+  <script src="./js/jquery-3.0.0.min.js"></script>
+  <style>
+	*{margin:0;padding:0;list-style:none;text-decoration:none;}
+	body{font-family:"돋움","dotum",sans-serif;}
+	#popup{position:relative;width:100%;height:65px;height:;background:#dfe0fc url("./images/bnD_w01.jpg")no-repeat center top;cursor:pointer;}
+	#popup .x{background:url("./images/btn_close5.gif")no-repeat;text-indent:-99999px;width:18px;height:22px;position:absolute;left:74%;top:40%;}
+	#header .top_header{width:100%;border-bottom:1px solid #d5dde3;background:#fbfbfb;}
+	#header .top_header .top_header_inner{width:950px;height:30px;margin:0 auto;}
+	#header .top_header .top_header_inner .l_util{float:left;}
+	#header .top_header .top_header_inner .l_util>li{position:relative;float:left;margin-right:15px;}
+	#header .top_header .top_header_inner .l_util>li .con{padding:5px 0 5px 20px;width:180px;height:60px;border:1px solid #888;color:#767676;position:absolute;left:0;top:30px;background:#fff;font-size:12px;display:none;}
+	#header .top_header .top_header_inner .l_util>.co:hover .con{display:block;}
+	#header .top_header .top_header_inner .l_util>li .con p{color:#fe1a01;margin-bottom:15px;font-weight:bold;}
+	#header .top_header .top_header_inner .l_util>li .con a{display:block;background:url("./images/arrow_04.gif")no-repeat 5	0% center;}
+	#header .top_header .top_header_inner .l_util>li .con a:hover{color:#3c5fdf;text-decoration:underline;background:url("./images/arrow_04.gif")no-repeat right center;}
+	#header .top_header .top_header_inner .l_util>li>a{display:block;font-size:11px;color:#333;}
+	#header .top_header .top_header_inner .l_util>li:first-child>a{margin-top:7px;padding-right:38px;background:url("./images/icon_off2.gif")no-repeat right center;}
+	#header .top_header .top_header_inner .l_util>li:nth-child(2) a{padding-left:5px;height:30px;line-height:30px;width:60px;background:url("./images/nav6_btn_sprite2.png")no-repeat;background-position:20px -27px;}
+	#header .top_header .top_header_inner .l_util>li:nth-child(2)>a:hover{color:#3c5fdf;text-decoration:underline;border:1px solid #aaa;background:#fff url("./images/nav6_btn_sprite2.png")no-repeat;margin:-1px 0 0 -1px;background-position:20px -27px;}
+	#header .top_header .top_header_inner .l_util>li:nth-child(3)>a:hover{color:#3c5fdf;text-decoration:underline;}
+	#header .top_header .top_header_inner .l_util>li:last-child>a{height:30px;line-height:30px;width:75px;background:url("./images/nav6_btn_sprite2.png")no-repeat;background-position:20px -27px;}
+	#header .top_header .top_header_inner .l_util>li .depth2{position:absolute;left:0;top:30px;background:#fff;border:1px solid #999;padding:10px 0;display:none;}
+	#header .top_header .top_header_inner .l_util>li .depth2 li{}
+	#header .top_header .top_header_inner .l_util>li .depth2 li a{display:block;width:103px;height:27px;color:#444;font-size:11px;text-indent:10px;line-height:27px;}
+	#header .top_header .top_header_inner .l_util>li .depth2 li a:hover{background:#f1f1f1;}
+	#header .top_header .top_header_inner .r_util{float:right;margin-top:6px;}
+	#header .top_header .top_header_inner .r_util li{position:relative;float:left;margin-left:12px;}
+	#header .top_header .top_header_inner .r_util li::after{content:'';width:1px;height:10px;background:#bbb;position:absolute;right:-7px;top:5px;}
+	#header .top_header .top_header_inner .r_util .icon::after{background:none;}
+	#header .top_header .top_header_inner .r_util li:nth-child(5)::after{background:none;}
+	#header .top_header .top_header_inner .r_util .login{width:45px;height:19px;background:#fff;border:1px solid #ddd;text-align:center;}
+	#header .top_header .top_header_inner .r_util li a{display:block;font-size:11px;color:#333;line-height:19px;}
+	#header .top_header .top_header_inner .r_util .icon a{position:relative;display:block;text-indent:-99999px;background:url("./images/nav6_btn_sprite.png")no-repeat;width:21px;height:17px;background-position:-80px 0;}
+	#header .top_header .top_header_inner .r_util .icon a span{text-indent:0;position:absolute;left:14px;top:-4px;background:red;width:16px;border-radius:10px;height:16px;background-position:0 -160px;color:#fff;text-align:center;line-height:15px;}
+	#header .top_header .top_header_inner .r_util li a:hover{color:#3c5fdf;text-decoration:underline;}
+	#header .top_header .top_header_inner .r_util .login a:hover{text-decoration:none;color:#333;border:1px solid #aaa;margin-top:-1px;}
+  </style>
+ </head>
+ <body>
+   <div id="popup">
+	<a href="#" class="x">X버튼</a>
+   </div>
+	<div id="header">
+	  <div class="top_header">
+		<div class="top_header_inner">
+			<ul class="l_util">
+				<li class="co">
+					<a href="#">바로콘</a>
+					<div class="con">
+						<p>바로콘으로 인터넷 교보문고 소식 받기</p>
+						<a href="#">바로콘 자세히 보기</a>
+					</div>
+				</li>
+				<li><a href="#">매장안내</a></li>
+				<li class="member">
+					<a href="#">회원혜택</a>
+					<ul class="depth2">
+						<li><a href="#">신규회원 혜택</a></li>
+						<li><a href="#">등급별 혜택</a></li>
+						<li><a href="#">Prestige Class</a></li>
+						<li><a href="#">등급UP 혜택</a></li>
+						<li><a href="#">참리뷰캠페인</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="r_util">
+				<li class="login"><a href="#">로그인</a></li>
+				<li><a href="#">회원가입</a></li>
+				<li><a href="#">출석체크</a></li>
+				<li><a href="#">고객센터</a></li>
+				<li><a href="#">주문배송</a></li>
+				<li class="icon">
+					<a href="#">
+					장바구니아이콘
+						<span>0</span>
+					</a></li>
+			</ul>
+		</div>
+	  </div>
+	</div>
+	<script>
+		console.log('완료')
+		$(function(){
+			$('#popup>.x').click(function(){
+				$('#popup').slideUp(300);
+			});
+			$('.l_util>.member').mouseenter(function(){
+				$('.l_util>.member>.depth2').stop().fadeIn(250);
+			});
+			$('.l_util>.member').mouseleave(function(){
+				$('.l_util>.member>.depth2').stop().fadeOut(250);
+			});
+		});
+	</script>
+ </body>
+</html>

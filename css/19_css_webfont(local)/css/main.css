@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'BM HANNA 11yrs old';
+    src: url('./../font/BMHANNA11yrsold.eot');
+    src: url('./../font/BMHANNA11yrsold.eot?#iefix') format('embedded-opentype'),
+        url('./../font/BMHANNA11yrsold.woff2') format('woff2'),
+        url('./../font/BMHANNA11yrsold.woff') format('woff'),
+        url('./../font/BMHANNA11yrsold.ttf') format('truetype'),
+        url('./../font/BMHANNA11yrsold.svg#BMHANNA11yrsold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'BM DoHyeon';
+    src: url('./../font/BMDoHyeon.eot');
+    src: url('./../font/BMDoHyeon.eot?#iefix') format('embedded-opentype'),
+        url('./../font/BMDoHyeon.woff2') format('woff2'),
+        url('./../font/BMDoHyeon.woff') format('woff'),
+        url('./../font/BMDoHyeon.ttf') format('truetype'),
+        url('./../font/BMDoHyeon.svg#BMDoHyeon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BM KIRANGHAERANG';
+    src: url('./../font/BMKIRANGHAERANG.eot');
+    src: url('./../font/BMKIRANGHAERANG.eot?#iefix') format('embedded-opentype'),
+        url('./../font/BMKIRANGHAERANG.woff2') format('woff2'),
+        url('./../font/BMKIRANGHAERANG.woff') format('woff'),
+        url('./../font/BMKIRANGHAERANG.ttf') format('truetype'),
+        url('./../font/BMKIRANGHAERANG.svg#BMKIRANGHAERANG') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BM YEONSUNG';
+    src: url('./../font/BMYEONSUNG.eot');
+    src: url('./../font/BMYEONSUNG.eot?#iefix') format('embedded-opentype'),
+        url('./../font/BMYEONSUNG.woff2') format('woff2'),
+        url('./../font/BMYEONSUNG.woff') format('woff'),
+        url('./../font/BMYEONSUNG.ttf') format('truetype'),
+        url('./../font/BMYEONSUNG.svg#BMYEONSUNG') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BM JUA';
+    src: url('./../font/BMJUA.eot');
+    src: url('./../font/BMJUA.eot?#iefix') format('embedded-opentype'),
+        url('./../font/BMJUA.woff2') format('woff2'),
+        url('./../font/BMJUA.woff') format('woff'),
+        url('./../font/BMJUA.ttf') format('truetype'),
+        url('./../font/BMJUA.svg#BMJUA') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+  p{
+	margin:0;
+	padding:0;
+	font-size:100px;
+  }
+  .p_1{
+	font-family: 'BM HANNA 11yrs old';
+  }
+   .p_2{
+	font-family: 'BM DoHyeon';
+   }
+   .p_3{
+	font-family: 'BM KIRANGHAERANG';
+   }
+   .p_4{
+	 font-family: 'BM YEONSUNG';
+   }
+   .p_5{
+	font-family: 'BM JUA';
+   }

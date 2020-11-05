@@ -1,0 +1,48 @@
+<!Doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+  <script src="./js/jquery-3.0.0.min.js"></script>
+  <style>
+  	#section_1{width: 100%;}
+  	#section_1 .section_inner{position:relative;width: 980px;height: 453px;margin:0 auto;}
+  	#section_1 .section_inner .tab_wrap{position:absolute;left:0;top:409px;width: 100%;}
+  	#section_1 .section_inner .tab_wrap li{float:left;margin-left:-1px;}
+  	#section_1 .section_inner .tab_wrap li a{display:block;width: 109.88px;height: 44px;font-size:14px;line-height:44px;color:#313131;text-align:center;border:1px solid #e1e1e1;box-sizing:border-box;font-weight:bold;background:#fff;}
+  	#section_1 .section_inner .tab_wrap li a.on{background:#d9bdb4;color:#fff;}
+  </style>
+ </head>
+ <body>
+	<div id="section_1">
+		<div class="section_inner">
+			<div class="img_wrap">
+				<a href="javascript:;"><img src="./images/banner_20190630214160421.jpg" alt=""></a>
+			</div>
+			<ul class="tab_wrap">
+				<li><a href="./images/banner_20190630214160421.jpg" class="on">예화담</a></li>
+				<li><a href="./images/banner_20190630215250556.jpg">픔렌징폼</a></li>
+				<li><a href="./images/banner_20190630215321455.jpg">립틴트</a></li>
+				<li><a href="./images/banner_20190630215465154.jpg">잉크파데</a></li>
+				<li><a href="./images/banner_20190701160096110.jpg">10+10</a></li>
+				<li><a href="./images/banner_20190701160313536.jpg">닥터벨머</a></li>
+				<li><a href="./images/banner_20190701165571256.jpg">수딩젤</a></li>
+				<li><a href="./images/banner_20190706104665851.jpg">워터프루프</a></li>
+				<li><a href="./images/banner_20190711142819906.jpg">선케어대전</a></li>
+			</ul>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			$('.tab_wrap li a').click(function(){
+				var num = $(this).attr('href');
+				$('.tab_wrap li a').removeClass('on');
+				$(this).addClass('on');
+				$(".img_wrap img").attr({"src":num}).css("opacity",0).stop().animate({"opacity":1},1000);
+				event.preventDefault();
+			});
+		})
+	</script>
+ </body>
+</html>

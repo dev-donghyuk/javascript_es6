@@ -1,0 +1,26 @@
+<!Doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+  <script src="./js/jquery-3.0.0.min.js"></script>
+ </head>
+ <body>
+	<p>
+		<input type="text">
+	</p>
+	<script>
+		$(function(){
+			$('input').change(function(){
+				var num = ($(this).val().length);
+				if(num == 0){
+					alert('아무런 데이터가 없습니다.')
+				}else{
+					alert('데이터가 있습니다.')
+				}
+			});
+		});
+	</script>
+ </body>
+</html>

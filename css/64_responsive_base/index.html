@@ -1,0 +1,41 @@
+<!Doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title></title>
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+  <script src="./js/jquery-3.0.0.min.js"></script>
+  <style>
+  	#wrap{width: 1000px;margin:0 auto;}
+  	#wrap .header{width: 100%;height: 300px;background: #800000;}
+  	#wrap .left{float:left;width: 50%;background: #006400;height: 300px;}
+  	#wrap .right{float:right;width: 50%;background: #008b8b;height: 300px;}
+  	/*노트북*/
+  	@media( min-width:992px )  and ( max-width:1119px ){
+  		body{padding:0 20px;}
+  		#wrap{width: 100%;margin:0;}
+  	}
+  	/*테블릿*/
+  	@media( min-width:768px )  and ( max-width:991px ){
+  		#wrap{width: 100%;margin:0;}
+  		#wrap .left{height: 600px;}
+  		#wrap .right{height: 600px;}
+  	}
+  	/*모바일*/
+  	@media( min-width:0px )  and ( max-width:767px ){
+  		#wrap{width: 100%;margin:0;}
+  		#wrap .header{height: 900px;}
+  		#wrap .left{float:none;width: 100%;height: 600px;}
+  		#wrap .right{float:none;width: 100%;height: 600px;}
+  	}
+  </style>
+ </head>
+ <body>
+	<div id="wrap">
+		<div class="header"></div>
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+ </body>
+</html>

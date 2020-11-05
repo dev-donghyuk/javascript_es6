@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+  <link href="./css/all.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
+  <script src="./js/jquery-3.0.0.min.js"></script>
+	<style>
+		body{font-family: 'Nanum Gothic', sans-serif;}
+		#section1{width:100%;}
+		#section1 .section_inner{height:210px;background:url("./images/Untitled-1.jpg")no-repeat center top;}
+		#section2{width:100%;background:#fff;}
+		#section2 .section_inner{width:1170px;height:494px;margin:0 auto;}
+		#section2 .section_inner .left{float:left;margin-top:84px}
+		#section2 .section_inner .left p{margin-bottom:8px;color:#4b4b4b;line-height:35px;font-size:14px;}
+		#section2 .section_inner .left p i{color:#333;vertical-align:middle;}
+		#section2 .section_inner .left p strong{font-size:15px;font-weight:bold;color:#333;}
+		#section2 .section_inner .left p span{font-weight:bold;}
+		#section2 .section_inner .left p em{display:block;text-indent:97px;}
+		#section2 .section_inner .left .p_4 em{display:inline-block;text-indent:81px;}
+		#section2 .section_inner .left .sns i{font-size:35px;color:#000;margin-right:15px;cursor:pointer;}
+		#section2 .section_inner .right{float:right;margin-top:84px;color:#999;}
+		#section2 .section_inner .right legend,#section2 .section_inner .right label{position:absolute;top:-99999px;}
+		#section2 .section_inner .right input{width:585px;height:34px;padding:0 13px;border-radius:5px;border:1px solid #ccc;margin-bottom:15px;}
+		#section2 .section_inner .right textarea{width:585px;height:94px;padding:0 13px;border-radius:5px;}
+		#section2 .section_inner .right textarea::placeholder{font-size:16px;line-height:29px;}
+		#section2 .section_inner .right .send{margin-top:15px;width:154px;height:38px;text-align:center;background:#5cb85c;color:#fff;font-size:14px;line-height:38px;border-radius:5px;cursor:pointer;}
+		#footer{width:100%;background:url("./images/2.jpg");text-align:center;}
+		#footer .footer_inner{position:relative;height:231px;width:500px;margin:0 auto;}
+		#footer .footer_inner h1{position:absolute;left:50%;top:51px;margin-left:-30px;}
+		#footer .footer_inner h1 a{display:block;width:60px;height:61px;background:url("./images/3.png")no-repeat;text-indent:-99999px;}
+		#footer .footer_inner h2{padding-top:148px;font-size:14px;color:#fff;}
+		#footer .footer_inner h3{padding-top:12px;font-size:14px;color:#85de07;font-weight:bold;}
+	</style>
+ </head>
+ <body>
+	<div id="section1">
+		<div class="section_inner">
+		</div>
+	</div>
+	<div id="section2">
+		<div class="section_inner">
+			<div class="left">
+				<p><i class="fas fa-map-marker-alt"></i>
+					<strong>ADDRESS</strong> : 308 Negra Arroyo Lane<br /><em>Albuquerque, New Mexico, 87111</em>
+				</p>
+				<p><i class="fas fa-phone"></i>
+					<strong>PHONE</strong> :1-800-BOO-YAHH
+				</p>
+				<p><i class="fas fa-pencil-alt"></i>
+					<strong>EMAIL</strong> :HELLO@KNIGHTSTUDIOS.COM
+				</p>
+				<p class="p_4"><i class="far fa-clock"></i>
+					<strong>HOURS</strong> :<span>Monday - Thursday</span>: 10am - 6px<br />
+					<span><em>Friday</em></span>:People work on Fridays now?<br />
+					<span><em>Saturday - Sunday</em></span>: Best not to ask
+				</p>
+				<div class="sns">
+					<i class="fab fa-twitter-square"></i>
+					<i class="fab fa-facebook-square"></i>
+					<i class="fab fa-pinterest-square"></i>
+					<i class="fab fa-google-plus-square"></i>
+					<i class="fas fa-caret-square-down"></i>
+				</div>
+			</div>
+			<div class="right">
+				<form>
+					<fieldset><legend>text</legend>
+						<ul class="box">
+							<li>
+								<div class="box_group">
+									<label>name</label>
+									<input type="text" placeholder="Your Name" />
+								</div>
+								<div class="box_group">
+									<label>email</label>
+									<input type="text" placeholder="Your Email" />
+								</div>
+								<div class="box_group">
+									<label>subject</label>
+									<input type="text" placeholder="Subject" />
+								</div>
+							</li>
+							<li>
+								<label>message	</label>
+								<textarea placeholder="Message"></textarea>
+							</li>
+						</ul>
+						<div class="send">
+							SEND MESSAGE
+						</div>
+				</fieldset>
+				</form>
+			</div>
+	</div>
+	<div id="footer">
+		<div class="footer_inner">
+			<h1 class="logo"><a href="#">말로고</a></h1>
+			<h2>ⓒ Knight Theme. All Rights Reserved</h2>
+			<h3>Business Bootsteap Themes by BootstrapMade</h3>
+		</div>
+	</div>
+ </body>
+</html>

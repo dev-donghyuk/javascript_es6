@@ -1,0 +1,54 @@
+@charset "UTF-8";
+table{
+	width:700px;
+	margin:0 auto;
+	border-collapse:collapse;
+	border-top:3px solid #F361A6;
+}
+table thead tr th{
+	border:1px solid #000;
+	border-left:none;
+	border-right:none;
+	color:#fff;
+	background:#FFB2D9;
+	height:40px;
+	border-bottom:1px solid #F361A6;
+}
+table tbody tr td{
+	text-align:center;
+	border:1px dashed #000;
+	border-left:none;
+	border-right:none;
+	height:30px;
+}
+table tbody tr td:nth-child(2){
+	text-align:left;
+	text-indent:5px;
+	font-weight:bold;
+	color:#5F00FF;
+}
+table tbody tr td{
+	color:#A6A6A6;
+}
+table tbody tr td:nth-child(3){
+	color:#747474;
+	font-weight:bold;
+}
+table tbody tr td:nth-child(4),table tbody tr td:nth-child(5){
+		font-size:11px;
+}
+table tbody tr:nth-child(even){
+	background:#FFD9FA;
+}
+p{
+	text-align:center;
+}
+input[type="text"]{
+	vertical-align:top;
+}
+input[type="button"]{
+	background:#F361A6;
+	color:#fff;
+	border:none;
+	padding:2px;
+}

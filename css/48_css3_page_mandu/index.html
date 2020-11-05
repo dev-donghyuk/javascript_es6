@@ -1,0 +1,124 @@
+<!Doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+  <link href="./css/all.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script src="./js/jquery-3.0.0.min.js"></script>
+  <style>
+  	body{font-family: 'Roboto', sans-serif;}
+  	/*top_header*/
+  	#top_header{width:100%;background:#4d525a;}
+  	#top_header .top_header_inner{width: 940px;height: 30px;margin:0 auto;}
+  	/*util*/
+  	#top_header .top_header_inner .util{float:right;}
+  	#top_header .top_header_inner .util>li{position:relative;float:left;}
+  	#top_header .top_header_inner .util>li>a{display:block;height: 30px;line-height:30px;padding:0 10px;color:#fff;font-size:11px;letter-spacing:1.3px;}
+  	#top_header .top_header_inner .util>.l_4>a,#top_header .top_header_inner .util>.l_5>a{padding-right:10px;}
+  	#top_header .top_header_inner .util>li>a span{display:inline-block;color:#81c341;margin:6px 0 0 10px;}
+  	#top_header .top_header_inner .util>li .depth2{position:absolute;left:0;top:30px;background:#42474e;display:none;}
+	#top_header .top_header_inner .util>li .depth2 li{}
+	#top_header .top_header_inner .util>li .depth2 li a{display:block;font-size:11px;color:#fff;padding:3px 15px;width: 71px;height:21px;line-height:21px;}
+	#top_header .top_header_inner .util>li .depth2 li:hover a{background:#2f3136;}
+	#top_header .top_header_inner .util>li:hover .depth2{display:block;}
+  	/*bot_header*/
+	#bot_header{width:100%;background:#4d525a;}
+	/*logo*/
+	#bot_header .bot_header_inner{width: 940px;height: 60px;margin:0 auto;}
+	#bot_header .bot_header_inner .logo{float:left;margin:10px 32px 0 0;}
+	#bot_header .bot_header_inner .logo a{display:block;width: 161px;height: 31px;background:url("./images/mando_logo.png")no-repeat;text-indent:-99999px;}
+	/*gnb*/
+	#bot_header .bot_header_inner .gnb{float:left;margin-top:22px;letter-spacing:1px;}
+	#bot_header .bot_header_inner .gnb>li{position:relative;float:left;padding-bottom:22px;}
+	#bot_header .bot_header_inner .gnb>li>a{position:relative;padding:0 33px;color:#fff;padding-bottom:10px;}
+	#bot_header .bot_header_inner .gnb>.l_3>a,#bot_header .bot_header_inner .gnb>.l_4>a{padding:0 45px 10px;}
+	#bot_header .bot_header_inner .gnb>li>a::after{content:'';position:absolute;left:50%;bottom:0;height:5px;background:#81c341;transition:all 0.2s ease;width:0;}
+	#bot_header .bot_header_inner .gnb>li:hover>a::after{width:50%;left:25%;}
+	#bot_header .bot_header_inner .gnb>li .depth2{position:absolute;left:20px;top:38px;width:100%;background:rgba(255,255,255,0.8);padding:9px 0px;display:none;}
+	#bot_header .bot_header_inner .gnb>li .depth2 li{padding:10px 0;}
+	#bot_header .bot_header_inner .gnb>li .depth2 li a{display:block;font-size:12px;color:#777;text-indent:10px;}
+	#bot_header .bot_header_inner .gnb>li .depth2 li:hover a{color:#000;}
+	#bot_header .bot_header_inner .gnb>li:hover .depth2{display:block;}
+	/*btn*/
+	#bot_header .bot_header_inner .btn_buy{float:right;border:1px solid #aaa;padding:8px 48px;text-align:center;background:#4d525a;transition:all 0.3s ease;color:#fff;font-weight:bold;height:40px;margin:10px 40px 0 0;}
+	#bot_header .bot_header_inner .btn_buy:hover{border:1px solid #81c341;}
+	/*main*/
+	#main{width:100%;}
+	#main .main_visual{height: 610px;background:url("./images/visual_01.jpg")no-repeat center top;}0
+  </style>
+ </head>
+ <body>
+	<div id="top_header">
+		<div class="top_header_inner">
+			<ul class="util">
+				<li><a href="javascript:;">LOGIN</a></li>
+				<li><a href="javascript:;">JOIN</a></li>
+				<li><a href="javascript:;">STORE</a></li>
+				<li class="l_4">
+					<a href="javascript:;">MYPAGE<span><i class="fas fa-sort-down"></i></span></a>
+					<ul class="depth2">
+						<li><a href="javascript:;">회원정보수정</a></li>
+						<li><a href="javascript:;">장바구니</a></li>
+						<li><a href="javascript:;">주문/배송조회</a></li>
+						<li><a href="javascript:;">구매내역조회</a></li>
+						<li><a href="javascript:;">예약정보조회</a></li>
+					</ul>
+				</li>
+				<li class="l_5">
+					<a href="javascript:;">LANGUAGE<span><i class="fas fa-sort-down"></i></span></a>
+					<ul class="depth2">
+						<li><a href="javascript:;">KOREAN</a></li>
+						<li><a href="javascript:;">ENGLISH</a></li>
+						<li><a href="javascript:;">GERMAN</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="bot_header">
+		<div class="bot_header_inner">
+			<h1 class="logo"><a href="index.html">만두풋루스로고</a></h1>
+			<ul class="gnb">
+				<li>
+					<a href="javascript:;">ABOUT</a>
+					<ul class="depth2">
+						<li><a href="javascript:;">브랜드 소개</a></li>
+						<li><a href="javascript:;">회사소개</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">PRODUCT</a>
+					<ul class="depth2">
+						<li><a href="javascript:;">테크놀로지</a></li>
+						<li><a href="javascript:;">만두풋루스</a></li>
+						<li><a href="javascript:;">만두풋루스 아이엠</a></li>
+					</ul>
+				</li>
+				<li class="l_3">
+					<a href="javascript:;">STORY</a>
+					<ul class="depth2">
+						<li><a href="javascript:;">이벤트</a></li>
+						<li><a href="javascript:;">공지사항</a></li>
+					</ul>
+				</li>
+				<li class="l_4">
+					<a href="javascript:;">SUPPORT</a>
+					<ul class="depth2">
+						<li><a href="javascript:;">자주 묻는 질문</a></li>
+						<li><a href="javascript:;">AS문의</a></li>
+						<li><a href="javascript:;">동영상 가이드</a></li>
+						<li><a href="javascript:;">다운로드</a></li>
+						<li><a href="javascript:;">정품등록</a></li>
+					</ul>
+				</li>
+			</ul>
+			<button type="button"class="btn_buy">BUY</button>
+		</div>
+	</div>
+	<div id="main">
+		<div class="main_visual"></div>
+	</div>
+ </body>
+</html>

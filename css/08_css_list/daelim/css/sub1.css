@@ -1,0 +1,52 @@
+@charset "UTF-8";
+body{font-family: 'Noto Sans KR', sans-serif;}
+/*-------------------------------------------------------------------------------------------------------header*/
+#header{width: 100%;background:#fafafa;border-bottom:1px solid #dcdcdc;position:fixed;}
+#header .header_inner{width:1100px;height:50px;margin:0 auto;}
+#header .header_inner .gnb{float:left;margin-top:17px;}
+#header .header_inner .gnb li{position:relative;float:left;font-size:14px;color:#000;padding:0 30px;}
+#header .header_inner .gnb li::after{content:'';position:absolute;right:0;top:1px;background:#e1e1e1;width:1px;height:16px;}
+#header .header_inner .gnb li a{display:block;width:40px;padding-right:40px;background:url("./../images/ico_down01.png")no-repeat right center;color:#000;font-size:14px;}
+#header .header_inner .gnb .l_1{padding:0;}
+#header .header_inner .gnb .l_1 a{background:none;padding-right:10px;margin-top:-2px;}
+#header .header_inner .btn{float:right;}
+#header .header_inner .btn a{display:inline-block;width:16px;height:16px;text-indent:-99999px;margin-top:18px;}
+#header .header_inner .btn .btn_1{background:url("./../images/ico_print01.png")no-repeat;}
+#header .header_inner .btn .btn_2{margin-left:20px;background:url("./../images/ico_share01.png")no-repeat;}
+/*-------------------------------------------------------------------------------------------------------content*/
+#content{width:1100px;margin:0 auto;}
+#content h2{font-size:50px;font-weight:bold;color:#001546;text-align: center;padding:50px 0; }
+/*-------------------------------------------------------------------------------------------------------search*/
+#content .search{background:#f5f5f5;width: 960px;height:33px;padding:30px 70px;}
+#content .hide{position:absolute;top:99999px;}
+#content .search .search_form{float:left;}
+#content .search .search_form .s_1{color:#222;margin-right:26px;vertical-align: middle}
+#content .search .search_form .s_2{margin:0 10px;}
+#content .search .search_form .s_3{color:#222;margin-left:10px;vertical-align:middle;}
+#content .search .search_form .i_1{width: 138px;height: 30px;padding:0 10px;}
+#content .search .search_form .btn_cal{width: 16px;height: 16px;background:url("./../images/ico_calendar.png")no-repeat;border:none;outline:none;cursor:pointer;text-indent:-99999px;vertical-align:middle;margin-left:10px;}
+#content .search .search_form .check{margin-left:20px;vertical-align:middle;}
+#content .search .search_form .btn_search{width: 58px;height: 32px;background:#222;border:none;color:#fff;vertical-align:middle;outline:none;cursor:pointer;font-size:12px;margin-left:20px;}
+#content .search .btn_law{float:right;width: 200px;height:30px;font-size:14px;color:#002b5c;background:url("./../images/ico_download03.png")no-repeat 94% center;border:none;outline:none;cursor:pointer;vertical-align:center;}
+/*-------------------------------------------------------------------------------------------------------table*/
+#tbl{width:100%;border-bottom:1px solid #e1e1e1;padding-bottom:50px;}
+#tbl .text{width:1100px;overflow:hidden;margin:40px auto 10px;}
+#tbl .text p{font-size:15px;color:#000;float:left;}
+#tbl .text h2{font-size:15px;color:#727272;float:right;}
+#tbl .tbl_notice{width:1100px;margin:0 auto;}
+#tbl .tbl_notice th{height:62px;background:#fafafa;font-size:20px;color:#002b5c;}
+#tbl .tbl_notice td{height:53px;line-height:53px;color:#555;text-align:center;}
+#tbl .tbl_notice .td_3{display:inline-block;width:800px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+#tbl .tbl_notice tr{border-bottom:1px solid #dfdfdf;}
+#tbl .tbl_notice .tr_1{border-top:3px solid #002b5c;}
+#tbl .tbl_notice .td_3{text-align:left;}
+#tbl .btn_more{width:1100px;height:50px;background:#fafafa;font-size:14px;text-align:center;color:#222;border:1px solid #e1e1e1;outline:none;cursor:pointer;margin:1px 0 50px 402px;vertical-align:middle;background:url("./../images/ico_more02.png")no-repeat 45% center;border-top:none;}
+#tbl .btn_more span{color:#002b5c;vertical-align:middle;}
+/*-------------------------------------------------------------------------------------------------------table*/
+#contents{width:1100px;height:332px;margin:0 auto;overflow:hidden;}
+#contents p{font-size:15px;color:#002b5c;height:71px;line-height:91px;font-weight:bold;}
+#contents div{float:left;width:258px;height:216px;border:1px solid #e1e1e1;border-top:5px solid #002b5c;margin-right:20px;background:#fff;}
+#contents div h2{font-size:24px;color:#002b5c;margin:21px 0 0 17px;}
+#contents div h3{font-size:14px;color:#757575;margin:21px 0 0 17px;}
+#contents div img{margin-top:21px;}
+#contents .box_4{margin-right:0;}

@@ -1,0 +1,55 @@
+<!Doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+  <link href="./css/jquery.lightbox-0.5.css" type="text/css" rel="stylesheet">
+  <script src="./js/jquery-3.0.0.min.js"></script>
+  <script src="./js/jquery.lightbox-0.5-mod.js"></script>
+  <style>
+  	#gallery{width: 660px;margin:100px auto 0;border:4px solid #000;padding:20px;}
+  	#gallery ul{overflow:hidden;}
+  	#gallery ul li{float:left;margin:0 20px 20px 0;}
+  	#gallery ul li:nth-child(4n){margin-right:0px;}
+  	#gallery ul li:nth-child(n+12){margin-bottom:0px;}
+  </style>
+ </head>
+ <body>
+	<div id="gallery">
+		<ul class="">
+			<li class="l_1"><a href="./images/p_1.jpg" title="작품1"><img src="./images/pi_1.jpg" alt=""></a></li>
+			<li class="l_2"><a href="./images/p_2.jpg" title="작품2"><img src="./images/pi_2.jpg" alt=""></a></li>
+			<li class="l_3"><a href="./images/p_3.jpg" title="작품3"><img src="./images/pi_3.jpg" alt=""></a></li>
+			<li class="l_4"><a href="./images/p_4.jpg" title="작품4"><img src="./images/pi_4.jpg" alt=""></a></li>
+			<li class="l_5"><a href="./images/p_5.jpg" title="작품5"><img src="./images/pi_5.jpg" alt=""></a></li>
+			<li class="l_6"><a href="./images/p_6.jpg" title="작품6"><img src="./images/pi_6.jpg" alt=""></a></li>
+			<li class="l_7"><a href="./images/p_7.jpg" title="작품7"><img src="./images/pi_7.jpg" alt=""></a></li>
+			<li class="l_8"><a href="./images/p_8.jpg" title="작품8"><img src="./images/pi_8.jpg" alt=""></a></li>
+			<li class="l_9"><a href="./images/p_9.jpg" title="작품9"><img src="./images/pi_9.jpg" alt=""></a></li>
+			<li class="l_10"><a href="./images/p_10.jpg" title="작품10"><img src="./images/pi_10.jpg" alt=""></a></li>
+			<li class="l_11"><a href="./images/p_11.jpg" title="작품11"><img src="./images/pi_11.jpg" alt=""></a></li>
+			<li class="l_12"><a href="./images/p_12.jpg" title="작품12"><img src="./images/pi_12.jpg" alt=""></a></li>
+			<li class="l_13"><a href="./images/p_13.jpg" title="작품13"><img src="./images/pi_13.jpg" alt=""></a></li>
+			<li class="l_14"><a href="./images/p_14.jpg" title="작품14"><img src="./images/pi_14.jpg" alt=""></a></li>
+			<li class="l_15"><a href="./images/p_15.jpg" title="작품15"><img src="./images/pi_15.jpg" alt=""></a></li>
+		</ul>
+	</div>
+	<script>
+		$(function(){
+			$('#gallery ul li a').lightBox({
+				overlayBgColor:'#000',
+				overlayOpacity:0.7,
+				imageLoading:'./images/lightbox-ico-loading.gif',
+				imageBtnClose:'./images/lightbox-btn-close.gif',
+				imageBtnPrev:'./images/lightbox-btn-prev.gif',
+				imageBtnNext:'./images/lightbox-btn-next.gif',
+				containerResizeSpeed:1000,
+				txtImage:'작품',
+				txtOf:'중에',
+				keyToClose:'x',
+			})
+		});
+	</script>
+ </body>
+</html>

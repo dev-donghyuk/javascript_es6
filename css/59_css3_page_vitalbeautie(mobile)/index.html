@@ -1,0 +1,114 @@
+<!Doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>바이탈뷰티</title>
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+  <script src="./js/jquery-3.0.0.min.js"></script>
+  <style>
+  	/*cover*/
+  	#cover{display:none;position:fixed;width: 100%;height: 100%;z-index:9999;background:rgba(0,0,0,0.65);}
+  	/*menu*/
+  	#menu{display:none;position:fixed;left:0;top:0;height:100%;border-right:1px solid #fff;z-index:99999;overflow:auto;}
+  	#menu #section_1{position:relative;width: 288px;height: 44px;background:#222;}
+  	#menu #section_1 h2{line-height:44px;color:#fff;padding-left:20px;font-size:14px;}
+  	#menu #section_1 .btn_close{position:absolute;right:5%;top:27%;}
+  	#menu #section_1 .btn_close img{width: 20px;}
+  	#menu #section_2{width: 288px;background:#333;}
+  	#menu #section_2 .util{overflow:hidden;margin-left:20px;}
+  	#menu #section_2 .util li{float:left;height: 44px;line-height:44px;margin-left:20px;}
+  	#menu #section_2 .util li a{font-size:14px;color:#fff;}
+  	#menu #section_3 .gnb{background:#f8f8f8;}
+  	#menu #section_3 .gnb li{border-bottom:1px solid #ccc;}
+  	#menu #section_3 .gnb li a{display:block;width: 288px;height: 44px;line-height:44px;text-indent:20px;color:#2d2d2d;}
+  	#menu #section_3 .gnb li:first-child a{background:#666;color:#fff;}
+  	/*header*/
+  	#header{width: 100%;background:#fff;border-bottom:1px solid #ccc;height: 40px;z-index:999;}
+  	#header .logo{position:absolute;left:50%;top:15px;margin-left:-45px;}
+  	#header .logo a img{width: 99px;}
+  	#header .btn_menu{float:left;width: 19px;margin:13px 0 0 20px;}
+  	#header .btn_menu img{width: 19px;}
+  	#header .btn_search{float:right;width: 17px;margin:11px 20px 0 0;}
+  	#header .btn_search img{width: 17px;}
+  	/*main*/
+  	#main{width: 100%;}
+  	#main img{width: 100%;}
+  </style>
+ </head>
+ <body>
+ 	<div id="cover">
+ 	</div>
+ 	<div id="menu">
+ 		<div id="section_1">
+ 			<h2>방문자님 안녕하세요</h2>
+ 			<a href="javascript:;" class="btn_close"><img src="./images/mob-closegng.png" alt=""></a>
+ 		</div>
+ 		<div id="section_2">
+ 			<ul class="util">
+ 				<li><a href="javascript:;">LOGIN</a></li>
+ 				<li><a href="javascript:;">JOIN</a></li>
+ 				<li><a href="javascript:;">FIND A STORE</a></li>
+ 			</ul>
+ 		</div>
+ 		<div id="section_3">
+ 			<ul class="gnb_1 gnb">
+ 				<li><a href="javascript:;">바이탈뷰티</a></li>
+ 				<li><a href="javascript:;">바이탈뷰티</a></li>
+ 				<li><a href="javascript:;">역사</a></li>
+ 				<li><a href="javascript:;">과학</a></li>
+ 				<li><a href="javascript:;">원료이야기</a></li>
+ 			</ul>
+ 			<ul class="gnb_2 gnb">
+ 				<li><a href="javascript:;">제품안내</a></li>
+ 				<li><a href="javascript:;">전체제품</a></li>
+ 				<li><a href="javascript:;">방판/백화점 제품</a></li>
+ 				<li><a href="javascript:;">아리따움 제품</a></li>
+ 				<li><a href="javascript:;">MD's 추천</a></li>
+ 				<li><a href="javascript:;">베스트</a></li>
+ 				<li><a href="javascript:;">생애주기 별 제품 찾기</a></li>
+ 				<li><a href="javascript:;">키워드로 제품 찾기</a></li>
+ 				<li><a href="javascript:;">온라인기획전</a></li>
+ 				<li><a href="javascript:;">판매처안내</a></li>
+ 			</ul>
+ 			<ul class="gnb_3 gnb">
+ 				<li><a href="javascript:;">홍보</a></li>
+ 				<li><a href="javascript:;">전체</a></li>
+ 				<li><a href="javascript:;">기사</a></li>
+ 				<li><a href="javascript:;">영상</a></li>
+ 				<li><a href="javascript:;">인쇄</a></li>
+ 				<li><a href="javascript:;">잡지</a></li>
+ 				<li><a href="javascript:;">페이스북</a></li>
+ 			</ul>
+ 			<ul class="gnb_4 gnb">
+ 				<li><a href="javascript:;">커뮤니티</a></li>
+ 				<li><a href="javascript:;">여성 건강 지수 테스트</a></li>
+ 				<li><a href="javascript:;">신체나이테스트</a></li>
+ 				<li><a href="javascript:;">이벤트</a></li>
+ 				<li><a href="javascript:;">켐페인</a></li>
+ 				<li><a href="javascript:;">리포터</a></li>
+ 			</ul>
+ 		</div>
+ 	</div>
+	<div id="header">
+		<h1 class="logo"><a href="index.html"><img src="./images/logo_v3.png" alt=""></a></h1>
+		<a href="javascript:;" class="btn_menu"><img src="./images/btn_mobgnbopen.png" alt=""></a>
+		<a href="javascript:;" class="btn_search"><img src="./images/btn_search.png" alt=""></a>
+	</div>
+	<div id="main">
+		<img src="./images/product_online_list_top_mobile02.png" alt="">
+	</div>
+	<script>
+		$(function(){
+			$('.btn_menu').click(function(){
+				$('#menu').show();
+				$('#cover').show();
+			});
+			$('.btn_close').click(function(){
+				$('#menu').hide();
+				$('#cover').hide();
+			});
+		});
+	</script>
+ </body>
+</html>

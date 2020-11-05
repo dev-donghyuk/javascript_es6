@@ -1,0 +1,22 @@
+@charset "UTF-8";
+#wrap{width: 1000px;margin:0 auto;}
+#wrap .header{background: #00cccc;float:left;width:30%;height: 400px;}
+#wrap .left{background: tomato;width: 70%;height: 200px;float:right;}
+#wrap .right{background: lightgreen;width: 70%;height: 200px;clear:right;float:right;}
+/*노트북*/
+ @media( min-width:992px )  and ( max-width:1119px ){
+body{padding:0 40px;}
+#wrap{width: 100%;margin:0;}
+}
+ /*테블릿*/
+ @media( min-width:768px )  and ( max-width:991px ){
+#wrap .header{float:none;width: 100%;height: 200px;}
+#wrap .left{float:none;width: 100%;height: 400px;}
+#wrap .right{float:none;width: 100%;height: 400px;}
+}
+ /*모바일*/
+ @media( min-width:0px )  and ( max-width:767px ){
+#wrap .header{float:none;width: 100%;height: 150px;}
+#wrap .left{float:none;width: 100%;height: 600px;}
+#wrap .right{float:none;width: 100%;height: 600px;}
+}

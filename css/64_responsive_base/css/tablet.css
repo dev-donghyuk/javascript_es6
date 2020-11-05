@@ -1,0 +1,3 @@
+@charset "UTF-8";
+#wrap .left{position:static;width: 100%;height: 100px;}
+#wrap .right{position:static;width: 100%;height: 100px;}

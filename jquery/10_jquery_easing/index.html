@@ -1,0 +1,74 @@
+<!Doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>jquery ui easing</title>
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+  <link href="./css/jquery-ui.min.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <script src="./js/jquery-3.0.0.min.js"></script>
+  <script src="./js/jquery-ui.min.js"></script>
+  <style>
+  	body{font-family: 'Nanum Gothic', sans-serif;}
+  	#main{background:#708090;}
+  	#main .section_1{width: 1000px;margin:0 auto;overflow:hidden;}
+  	#main .section_1 .banner li{float:left;}
+  	#main .section_2{width: 1000px;margin:0 auto;overflow:hidden;}
+  	#main .section_2 .banner li{float:left;}
+  </style>
+ </head>
+ <body>
+	<div id="main">
+		<div class="section_1">
+			<ul class="banner">
+				<li>
+					<a href="javascript:;"><img src="./images/area1_img1.jpg" alt=""></a>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="./images/area1_img2.jpg" alt=""></a>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="./images/area1_img3.jpg" alt=""></a>
+				</li>
+			</ul>
+		</div>
+		<div class="section_2">
+			<ul class="banner">
+				<li><a href="javascript:;"><img src="./images/area2_img2.jpg" alt=""></a></li>
+				<li><a href="javascript:;"><img src="./images/area2_img3.jpg" alt=""></a></li>
+				<li><a href="javascript:;"><img src="./images/area2_img4.jpg" alt=""></a></li>
+				<li><a href="javascript:;"><img src="./images/area2_img5.jpg" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			$('.section_1 .banner li').click(function(){
+				var num = $(this).index();
+				console.log(num)
+				if(num==0){
+				$(this).animate({'margin-top':'200px'},800,'easeInOutElastic');
+				}else if(num==1){
+				$(this).animate({'margin-top':'200px'},800,'easeInOutCirc');
+				}else{
+					$(this).animate({'margin-top':'200px'},800,'easeInOutBounce');
+				}
+			});
+			$('.section_2 .banner li').click(function(){
+				var num = $(this).index();
+				console.log(num)
+				switch(num){
+					case 0 : $(this).animate({'margin-top':'200px'},800,'easeInOutElastic');
+					break;
+					case 1 : $(this).animate({'margin-top':'200px'},800,'easeInOutCirc');
+					break;
+					case 2 : $(this).animate({'margin-top':'200px'},800,'easeInOutBounce');
+					break;
+					default : $(this).animate({'margin-top':'200px'},800,'easeInOutCubic');
+					break;
+				}
+			});
+		});
+	</script>
+ </body>
+</html>

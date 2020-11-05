@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>제이쿼리연결</title>
+  <script src="./js/jquery-3.0.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var a;
+			var b;
+			var c;
+			a=10;
+			b=20;
+			c=a+b;
+			console.log(c);
+		$('h2').css('color','red')
+		});	
+	</script>
+ </head>
+ <body>
+	<h1>jQuery 란?</h1>
+	<p>제이쿼리는 자바스크립트의 생산성을 향상시켜주는 자바스크립트 라이브러리입니다. 자바스크립트 라이브러리란, 자주사용하는 코드들을 재사용 할 수 있는 형태로 가공해서 프로그래밍기법</p>
+	<h2>jQuery 특징?</h2>
+	<ol>
+		<li>엘리먼트를 선택하는 강력한 기능 제공</li>
+		<li>선택된 엘리먼트들을 제어할 수 있는 다양한 함수</li>
+		<li>제공 자바스크립트를 라이브러리화 함.</li>
+	</ol>
+	<h2>jQuery 문법?</h2>
+	<ol>
+		<li>$("대상").함수();</li>
+		<li>jQuery("대상").함수();</li>
+	</ol>
+	<h2>jQuery 랩퍼(Wrapper)</h2>
+	<ol>
+		<li>$(document).ready(function(){});</li>
+		<li>$(function(){});</li>
+	</ol>
+	<h2>jQuery 문서 연결방법</h2>
+	<ol>
+		<li>jQuery 직접연결시 : 제이쿼리 공식사이트에서 완성된버전의 최소버전을 다운받아서 연결한다.</li>
+		<li>CDN 주소로 연결시 : 서비스를 제공하는 업체로부터 링크주소를 사용해서 문서에 연결하여 서비스 함.</li>
+	</ol>
+ </body>
+</html>

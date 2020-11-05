@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>form(파리바게트)</title>
+  <style>
+	*{
+		margin:0;
+		padding:0;
+		list-style:none;
+		text-decoration:none;
+	}
+	body{
+		font-size:12px;
+	}
+	#header .top_header{
+		width:100%;
+		border-bottom:1px solid #005097;
+	}
+	#header .top_header .top_header_inner{
+		width:996px;
+		height:30px;
+		margin:0 auto;
+	}
+	#header .top_header .top_header_inner .util{
+		float:left;
+		margin-top:5px;
+	}
+	#header .top_header .top_header_inner .util li{
+		float:left;
+		margin-right:10px;
+	}
+	#header .top_header .top_header_inner .util li:first-child{
+		background:url("./images/globalLoginBg.jpg") no-repeat 10% 10%;
+		width:63px;
+		height:18px;
+		text-align:center;
+	}
+	#header .top_header .top_header_inner .util li a{
+		color:#005097;
+	}
+	#header .top_header .top_header_inner .util li:first-child a{
+		color:#fff;
+	}
+	#header .top_header .top_header_inner .icon{
+		float:right;
+		margin-top:5px;
+	}
+	#header .top_header .top_header_inner .icon a{
+		margin-left:16px;
+	}
+	#header .bot_header{
+		position:relative;
+		height:70px;
+		border-bottom:1px solid #005097;
+		width:996px;
+		margin:0 auto;
+	}
+	#header .bot_header h1{
+		position:absolute;
+		left:50%;
+		top:12px;
+		margin-left:-107px;
+	}
+	#header .bot_header .search{
+		float:left;
+		margin-top:25px;
+		padding:5px 15px;
+		background:#f5f5f5;
+		border-radius:20px;
+	}
+	#header .bot_header .search form fieldset{
+		border:none;
+	}
+	#header .bot_header .search form fieldset legend{
+		position:absolute;
+		top:-99999px;
+	}
+	#header .bot_header .search input{
+		outline:none;
+		width:250px;
+		height:20px;
+		vertical-align:middle;
+		background:#f5f5f5;
+		border:none;
+	}
+	#header .bot_header .search .btn_search{
+		background:url("./images/btnGlobalSearch2.gif") no-repeat;
+		width:14px;
+		height:14px;
+		background-size:14px;
+		text-indent:-99999px;
+		border:none;
+		cursor:pointer;
+		outline:none;
+		vertical-align:middle;
+	}
+  </style>
+ </head>
+ <body>
+	<div id="header">
+		<div class="top_header">
+			<div class="top_header_inner">
+				<ul class="util">
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#"><img src="./images/fav_facebook.png" alt="페이스북"></a></li>
+					<li><a href="#"><img src="./images/fav_insta.png" alt="인스타"></a></li>
+					<li><a href="#"><img src="./images/fav_kakao.png" alt="카카오톡"></a></li>
+					<li><a href="#"><img src="./images/fav_international_franchising.png " alt="franchsing"></a></li>
+				</ul>
+				<div class="icon">
+					<a href="#"><img src="./images/bgStoreB.png"></a>
+					<a href="#"><img src="./images/bgCoupnB.png"></a>
+					<a href="#"><img src="./images/bgPointB.png"></a>
+				</ul>
+				</div>
+			</div>
+		</div>
+		<div class="bot_header">
+			<div class="search">
+				<form>
+					<fieldset>
+						<legend>전체검색</legend>
+							<input type="text" placeholder="제품명을 검색하세요.">
+							<button type="submit" class="btn_search">검색</button>
+					</fieldset>
+				</form>	
+			</div>
+			<h1><a href="index.html"><img src="./images/logoB_mod.png"></a></h1>
+		</div>
+	</div>
+ </body>
+</html>

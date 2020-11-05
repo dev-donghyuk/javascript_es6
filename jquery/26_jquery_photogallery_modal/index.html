@@ -1,0 +1,44 @@
+<!Doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>photogallery</title>
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+  <link href="./css/jquery.lightbox-0.5.css" type="text/css" rel="stylesheet">
+  <link href="./css/main.css" type="text/css" rel="stylesheet">
+  <script src="./js/jquery-3.0.0.min.js"></script>
+  <script src="./js/jquery.lightbox-0.5-mod.js"></script>
+  <style>
+  	#gallery ul{width: 960px;margin:150px auto 0;}
+  	#gallery ul{overflow:hidden;}
+  	#gallery ul li{float:left;margin-right:20px;}
+  	#gallery ul .l_4{margin-right:0px;}
+  </style>
+ </head>
+ <body>
+	<div id="gallery">
+		<ul>
+			<li class="l_1"><a href="./images/pic1.jpg" title="월-e"><img src="./images/p1.jpg" alt=""></a></li>
+			<li class="l_2"><a href="./images/pic2.jpg" title="할아버지와손자"><img src="./images/p2.jpg" alt=""></a></li>
+			<li class="l_3"><a href="./images/pic3.jpg" title="교통사고현장"><img src="./images/p3.jpg" alt=""></a></li>
+			<li class="l_4"><a href="./images/pic4.jpg" title="추석이벤트"><img src="./images/p4.jpg" alt=""></a></li>
+		</ul>
+	</div>
+	<script>
+		$(function(){
+			$('#gallery ul li a').lightBox({
+				overlayBgColor:'#000',
+				overlayOpacity:0.7,
+				imageLoading:'./images/lightbox-ico-loading.gif',
+				imageBtnClose:'./images/lightbox-btn-close.gif',
+				imageBtnPrev:'./images/lightbox-btn-prev.gif',
+				imageBtnNext:'./images/lightbox-btn-next.gif',
+				containerResizeSpeed:1000,
+				txtImage:'작품',
+				txtOf:'중에',
+				keyToClose:'x',
+			})
+		});
+	</script>
+ </body>
+</html>

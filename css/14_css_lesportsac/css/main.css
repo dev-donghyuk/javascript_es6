@@ -1,0 +1,413 @@
+@charset "UTF-8";
+body {
+    font-family: '���� ����', 'malgun gothic', '����', dotum, sans-serif;
+    height: 2000px;
+}
+#slider {
+    width: 960px;
+    height: 527px;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+
+#header {
+    width: 100%;
+    height: 83px;
+    background: url('./../images/bg_header.gif') repeat-x;
+}
+#header .header_inner {
+    position: relative;
+    margin: 0 auto;
+    width: 960px;
+    height: 83px;
+}
+#header .header_inner h1 {
+    position: absolute;
+    left: 50%;
+    top: 14px;
+    margin-left: -84px;
+}
+#header .header_inner .util_left {
+    float: left;
+    margin-top: 22px;
+}
+#header .header_inner .util_left li {
+    position: relative;
+    float: left;
+    margin-right: 15px;
+}
+#header .header_inner .util_left li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+}
+#header .header_inner .util_left li a span {
+    color: rgb(217, 0, 148);
+    display: block;
+    background: url('./../images/bg_join_point.png') no-repeat;
+    width: 68px;
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+    font-size: 10px;
+    position: absolute;
+    left: -18px;
+    top: 15px;
+}
+#header .header_inner .util_left li a:hover {
+    color: rgb(217, 0, 148);
+}
+#header .header_inner .util_right {
+    float: right;
+    margin-top: 14px;
+}
+#header .header_inner .util_right li {
+    position: relative;
+    float: left;
+    margin-left: 10px;
+}
+#header .header_inner .util_right li a {
+    display: block;
+    width: 38px;
+    height: 38px;
+    text-indent: -99999px;
+    color: #fff;
+}
+#header .header_inner .util_right li a span {
+    display: block;
+    text-indent: 0;
+    background: url('./../images/bg_cart_num.png') no-repeat;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    left: -5px;
+    top: -3px;
+}
+#header .header_inner .util_right li .lepo {
+    background: url('./../images/ico_instagram.png') no-repeat;
+}
+#header .header_inner .util_right li .cart {
+    background: url('./../images/ico_cart.gif') no-repeat;
+}
+#header .header_inner .util_right li .search {
+    background: url('./../images/ico_search.png') no-repeat;
+}
+.gnb {
+    width: 960px;
+    height: 50px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin: 20px auto;
+    text-align: center;
+    z-index: 99999;
+}
+.gnb > li {
+    position: relative;
+    display: inline-block;
+    margin: 0 28px;
+}
+.gnb > li > a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+.gnb > li:hover > .gnb1 {
+    color: rgb(0, 154, 159);
+}
+.gnb > li:hover > .gnb2 {
+    color: rgb(125, 60, 224);
+}
+.gnb > li:hover > .gnb3 {
+    color: rgb(225, 224, 46);
+}
+.gnb > li:hover > .gnb4 {
+    color: rgb(225, 153, 69);
+}
+.gnb > li:hover > .gnb5 {
+    color: rgb(153, 255, 209);
+}
+.gnb > li:hover > .gnb6 {
+    color: rgb(225, 2, 149);
+}
+.gnb > li .depth2 {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    background: #fff;
+    width: 160px;
+    border: 1px solid #000;
+    border-top: 4px solid #000;
+    padding: 20px 0;
+    margin-left: -80px;
+    display: none;
+    z-index: 99999;
+}
+.gnb > li .depth2 li a {
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(153, 153, 153);
+}
+.gnb > li .depth2 li a:hover {
+    text-decoration: underline;
+    color: rgb(52, 52, 52);
+}
+.main {
+    width: 960px;
+    margin: 0 auto;
+}
+/*popup*/
+#popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.9);
+}
+#popup .popup_inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -225px;
+    margin-top: -300px;
+}
+#popup .popup_inner .btn_close {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background: url('./../images/btn_popup_close.png') no-repeat;
+    width: 37px;
+    height: 37px;
+    background-size: 37px;
+    text-indent: -99999px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+/*section1*/
+#section1 {
+    width: 100%;
+    overflow: hidden;
+}
+#section1 .section_inner {
+    width: 960px;
+    height: 415px;
+    margin: 100px auto 0;
+}
+#section1 .section_inner li {
+    float: left;
+    text-align: center;
+}
+#section1 .section_inner li img:hover {
+    opacity: 0.6;
+}
+#section1 .section_inner li h2 {
+    margin: 20px 0 5px;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+#section1 .section_inner li h3 {
+    font-size: 12px;
+    color: #000;
+}
+/*section2*/
+#section2 {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#section2 p {
+    margin-top: 50px;
+    width: 960px;
+    height: 18px;
+    text-align: center;
+    font-size: 18px;
+    background: url('./../images/bg_title.gif') repeat-x 0 center;
+    font-weight: bold;
+    color: #333;
+}
+#section2 p span {
+    background: #fff;
+    padding: 0 40px;
+}
+#section2 .box {
+    padding-top: 20px;
+}
+#section2 .box li {
+    position: relative;
+    float: left;
+    text-align: center;
+}
+#section2 .box li a {
+}
+#section2 .box li a .img {
+    width: 240px;
+    height: 240px;
+}
+#section2 .box li a .img:hover {
+    opacity: 0.6;
+}
+#section2 .box li a .new {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#section2 .box li a h2 {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#section2 .box li a h3 {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+#section2 .box li a h4 {
+    color: #333;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+/*section3*/
+#section3 {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#section3 > p {
+    margin-top: 50px;
+    width: 960px;
+    height: 18px;
+    text-align: center;
+    font-size: 18px;
+    background: url('./../images/bg_title.gif') repeat-x 0 center;
+    font-weight: bold;
+    color: #333;
+}
+#section3 > p span {
+    background: #fff;
+    padding: 0 40px;
+}
+#section3 .box {
+    padding-top: 20px;
+}
+#section3 .box li {
+    position: relative;
+    float: left;
+    text-align: center;
+}
+#section3 .box li a {
+}
+#section3 .box li a .img {
+    width: 240px;
+    height: 240px;
+}
+#section3 .box li a .img:hover {
+    opacity: 0.6;
+}
+#section3 .box li a .new {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#section3 .box li a h2 {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#section3 .box li a h3 {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+#section3 .box li a h4 {
+    color: #333;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+#section3 .box li a p {
+    font-size: 12px;
+    color: #a2a2a2;
+    text-decoration: line-through;
+    margin-bottom: 5px;
+}
+/*section4*/
+#section4 {
+    width: 960px;
+    height: 573px;
+    margin: 0 auto;
+}
+#section4 > p {
+    width: 960px;
+    height: 18px;
+    text-align: center;
+    font-size: 18px;
+    background: url('./../images/bg_title.gif') repeat-x 0 center;
+    font-weight: bold;
+    color: #333;
+}
+#section4 > p span {
+    background: #fff;
+    padding: 0 40px;
+}
+/*banner*/
+#section4 .banner {
+    margin-top: 45px;
+}
+#section4 .banner li {
+    float: left;
+    margin: 0 52px 55px 0;
+    overflow: hidden;
+}
+#section4 .banner .l_4 {
+    margin-right: 0;
+}
+#section4 .banner .l_8 {
+    margin-right: 0;
+}
+#section4 .banner li a {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+#section4 .banner li a img {
+    width: 200px;
+    height: 200px;
+    transition: opacity 0.5s ease;
+}
+#section4 .banner li a h2 {
+    position: absolute;
+    left: -200px;
+    top: 100px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    background: url('./../images/o.png');
+    width: 200px;
+    height: 41px;
+    line-height: 41px;
+    margin-top: -17px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+#section4 .banner li a img:hover {
+    opacity: 0.8;
+}
+#section4 .banner li a:hover h2 {
+    left: 0;
+}

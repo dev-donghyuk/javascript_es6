@@ -1,0 +1,606 @@
+@charset "UTF-8";
+/*------------------------------------------------------------------------------main_slider*/
+#main.main .main_slider .swiper-slide img {
+   width: 100%;
+}
+#main.main .main_slider .swiper-pagination {
+   bottom: 1%;
+   height: 10px;
+}
+#main.main .main_slider .swiper-pagination .swiper-pagination-bullet {
+   width: 10px;
+   height: 10px;
+   background: rgba(0, 0, 0, 0.3);
+   opacity: 1;
+   margin: 0 7px;
+   transition: all 0.3s ease;
+}
+#main.main .main_slider .swiper-pagination .swiper-pagination-bullet-active {
+   background: #fff;
+}
+/*------------------------------------------------------------------------------section_1*/
+#main.main .section_1 {
+   width: 100%;
+   background: #fff;
+   text-align: center;
+   padding: 30px 15px;
+   position: relative;
+}
+#main.main .section_1 h2 {
+   font-size: 22px;
+   color: #000;
+   font-weight: 500;
+}
+/*------------------------------------------------------------------------------tab button*/
+#main.main .section_1 .btn_tab {
+   overflow: hidden;
+   width: 100%;
+   padding-top: 30px;
+}
+#main.main .section_1 .btn_tab li {
+   float: left;
+   width: 33.33%;
+}
+#main.main .section_1 .btn_tab li a {
+   display: block;
+   width: 100%;
+   height: 40px;
+   line-height: 40px;
+   color: #000;
+   font-size: 18px;
+   transition: all 0.3s ease;
+}
+#main.main .section_1 .btn_tab li.on a {
+   background: #c00c0c;
+   color: #fff;
+}
+/*------------------------------------------------------------------------------tab menu*/
+#main.main .section_1 .menu_slider {
+   width: 100%;
+   padding: 30px 0 50px;
+}
+#main.main .section_1 .menu_slider .swiper-slide img {
+   width: 164px;
+}
+#main.main .section_1 .menu_slider .swiper-pagination {
+   width: 100%;
+   height: 10px;
+   bottom: 0px;
+   z-index: 99999;
+}
+#main.main .section_1 .menu_slider .swiper-pagination .swiper-pagination-bullet {
+   width: 10px;
+   height: 10px;
+   background: rgba(0, 0, 0, 0.3);
+   opacity: 1;
+   margin: 0 7px;
+   transition: all 0.3s ease;
+}
+#main.main .section_1 .menu_slider .swiper-pagination .swiper-pagination-bullet-active {
+   background: #c00c0c;
+}
+#main.main .section_1 .menu_slider.siblings {
+   display: none;
+}
+#main.main .section_1 .more {
+   position: absolute;
+   right: 15px;
+   bottom: 40px;
+   display: block;
+   width: 50px;
+   height: 15px;
+   line-height: 15px;
+   background: #c00c0c url('./../images/arrow.png') no-repeat 41px center;
+   background-size: 5px;
+   color: #fff;
+   font-size: 10px;
+   text-align: left;
+   text-indent: 5px;
+}
+/*------------------------------------------------------------------------------section_2*/
+#main.main .section_2 {
+   width: 100%;
+   position: relative;
+}
+#main.main .section_2 img {
+   width: 100%;
+}
+#main.main .section_2 .section_inner {
+   width: 45.5%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.7) url('./../images/icon.png') no-repeat center 16px;
+   background-size: 70px;
+   padding: 0 16px;
+   position: absolute;
+   left: 50%;
+   top: 0;
+   transform: translateX(-50%);
+}
+#main.main .section_2 .section_inner h2 {
+   padding-top: 80px;
+   font-size: 18px;
+   color: #ffc425;
+}
+#main.main .section_2 .section_inner h3 {
+   padding: 16px 0 16px 0;
+   font-size: 7px;
+   color: #fff;
+   line-height: 14px;
+}
+#main.main .section_2 .section_inner .link {
+   display: block;
+   width: 135px;
+   height: 33px;
+   text-align: center;
+   line-height: 33px;
+   color: #fff;
+   font-size: 12px;
+   background: #c00c0c;
+   margin: 0 auto;
+}
+/*------------------------------------------------------------------------------section_3*/
+#main.main .section_3 .event {
+   width: 100%;
+   overflow: hidden;
+}
+#main.main .section_3 .event li {
+   float: left;
+   width: 50%;
+}
+#main.main .section_3 .event li a {
+   display: block;
+   width: 100%;
+   height: 60px;
+   line-height: 60px;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   text-align: center;
+}
+#main.main .section_3 .event .l_1 a {
+   background: #c00c0c;
+}
+#main.main .section_3 .event .l_1 a span img {
+   width: 24px;
+   margin: 15px 0 0 7px;
+}
+#main.main .section_3 .event .l_2 a {
+   background: #ffc425;
+}
+#main.main .section_3 .event .l_2 a span img {
+   width: 24px;
+   margin: 18px 0 0 7px;
+}
+/*------------------------------------------------------------------------------section_3*/
+#main.main .section_4 {
+   width: 100%;
+   background: #bf2024;
+   padding: 40px 15px;
+   text-align: center;
+}
+#main.main .section_4 h2 {
+   display: inline;
+   font-size: 23px;
+   color: #fff;
+   font-weight: 500;
+   position: relative;
+}
+#main.main .section_4 h2::before {
+   content: '';
+   position: absolute;
+   left: -10px;
+   top: 10px;
+   width: 3px;
+   height: 18px;
+   background: #ffc425;
+}
+#main.main .section_4 h2::after {
+   content: '';
+   position: absolute;
+   right: -10px;
+   top: 10px;
+   width: 3px;
+   height: 18px;
+   background: #ffc425;
+}
+#main.main .section_4 .cf_1 {
+   margin-top: 40px;
+}
+#main.main .section_4 .cf h3 {
+   font-size: 15px;
+   color: #fff;
+   padding: 8px 0;
+}
+/*------------------------------------------------------------------------------login page*/
+#main.login_wrap {
+   width: 100%;
+   background: #fff;
+}
+#main.login_wrap .back {
+   display: block;
+   width: 100%;
+   height: 60px;
+   line-height: 60px;
+   text-align: center;
+   color: #000;
+   font-weight: bold;
+   background: url('./../images/l_arrow.png') no-repeat 15px center;
+   background-size: 10px;
+   border-bottom: 2px solid #c00c0c;
+}
+#main.login_wrap .login {
+   padding: 75px 15px 35px;
+}
+#main.login_wrap .login .box input {
+   width: 100%;
+   height: 55px;
+   line-height: 55px;
+   border: 2px solid #c00c0c;
+   padding-left: 15px;
+   margin-bottom: 10px;
+   color: #111;
+   font-weight: bold;
+   outline: none;
+}
+#main.login_wrap .login .box input::placeholder {
+   color: #111;
+   font-weight: bold;
+}
+#main.login_wrap .login .save {
+   padding-bottom: 20px;
+}
+#main.login_wrap .login .save span {
+   font-size: 14px;
+   color: #000;
+   font-weight: 500;
+   vertical-align: middle;
+}
+#main.login_wrap .login .save input {
+   width: 14px;
+   height: 14px;
+   margin-right: 10px;
+   vertical-align: middle;
+}
+#main.login_wrap .login .btn_login {
+   width: 100%;
+   height: 55px;
+   line-height: 55px;
+   color: #fff;
+   font-weight: bold;
+   text-align: center;
+   background: #c00c0c;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   font-size: 16px;
+   font-family: 'Noto Sans KR', sans-serif;
+   margin-bottom: 36px;
+}
+#main.login_wrap .login .util {
+   overflow: hidden;
+   text-align: center;
+}
+#main.login_wrap .login .util li {
+   display: inline-block;
+}
+#main.login_wrap .login .util li a {
+   position: relative;
+   padding: 0 15px;
+   font-weight: 500;
+   color: #111111;
+   font-size: 14px;
+}
+#main.login_wrap .login .util .l_2 a::before {
+   content: '';
+   width: 1px;
+   height: 13px;
+   background: #111;
+   position: absolute;
+   left: 0;
+   top: 4px;
+}
+/*------------------------------------------------------------------------------store page*/
+#main.store_wrap {
+   width: 100%;
+   background: #fff;
+}
+#main.store_wrap .btn_store {
+   width: 100%;
+   height: 60px;
+   line-height: 60px;
+   text-align: center;
+   font-size: 16px;
+   display: block;
+   color: #000;
+   font-weight: 500;
+   background: url('./../images/store_arrow.png') no-repeat right 15px center;
+   background-size: 12px;
+   border-bottom: 1px solid #cc0c0c;
+}
+#main.store_wrap .section_1 {
+   width: 100%;
+   height: 425px;
+}
+#main.store_wrap .section_1 .map {
+   width: 100%;
+   height: 360px;
+}
+#main.store_wrap .section_1 .map #map_canvas {
+   width: 100%;
+   height: 360px;
+}
+#main.store_wrap .section_1 .search_wrap {
+   margin: 12px 0;
+   border: 2px solid #cc0c0c;
+   width: 100%;
+   height: 40px;
+   position: relative;
+}
+#main.store_wrap .section_1 .search_wrap legend {
+   position: absolute;
+   top: -99999px;
+}
+#main.store_wrap .section_1 .search_wrap input {
+   border: none;
+   width: 280px;
+   height: 36px;
+   vertical-align: middle;
+   padding-left: 15px;
+   outline: none;
+   float: left;
+}
+#main.store_wrap .section_1 .search_wrap input::placeholder {
+   color: #000;
+   font-family: 'Noto Sans KR', sans-serif;
+}
+#main.store_wrap .section_1 .search_wrap .btn_search {
+   width: 40px;
+   height: 36px;
+   padding: 0;
+   margin: 0;
+   vertical-align: middle;
+   border: none;
+   background: url('./../images/s_search.png') no-repeat center center;
+   background-size: 24px;
+   text-indent: -99999px;
+   outline: none;
+   cursor: pointer;
+   position: relative;
+   float: right;
+}
+#main.store_wrap .section_1 .search_wrap .btn_search::after {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 10px;
+   width: 2px;
+   height: 16px;
+   background: #cc0c0c;
+}
+#main.store_wrap .section_1 .search_wrap .btn_reset {
+   width: 20px;
+   height: 20px;
+   text-indent: -99999px;
+   border: none;
+   background: url('./../images/btn_reset.png') no-repeat;
+   background-size: 20px;
+   position: absolute;
+   top: 8px;
+   right: 50px;
+   display: none;
+   outline: none;
+   cursor: pointer;
+}
+#main.store_wrap .section_2 {
+   height: 450px;
+   width: 100%;
+   padding: 0 15px;
+   background: #f1f1f1;
+   padding: 0 15px;
+}
+#main.store_wrap .section_2 h2 {
+   padding: 35px 0;
+   color: #000;
+   font-size: 22px;
+   font-weight: bold;
+}
+#main.store_wrap .section_2 .new {
+   width: 100%;
+   height: 290px;
+}
+#main.store_wrap .section_2 .new li {
+   float: left;
+   width: calc(50% - 10px);
+   background: #fff;
+   position: relative;
+}
+#main.store_wrap .section_2 .new .l_1,
+#main.store_wrap .section_2 .new .l_2 {
+   margin-bottom: 10px;
+}
+#main.store_wrap .section_2 .new .l_1,
+#main.store_wrap .section_2 .new .l_3 {
+   margin: 0 10px;
+}
+#main.store_wrap .section_2 .new li .cs {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   height: 50px;
+}
+#main.store_wrap .section_2 .new li .cs img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+#main.store_wrap .section_2 .new li a {
+   display: block;
+   width: 100%;
+   height: 140px;
+   text-align: center;
+}
+#main.store_wrap .section_2 .new li a h3 {
+   font-size: 10px;
+   color: #333333;
+   padding-top: 40px;
+}
+#main.store_wrap .section_2 .new li a h4 {
+   font-weight: bold;
+   font-size: 13px;
+   color: #333333;
+   padding-top: 15px;
+}
+#main.store_wrap .section_2 .store_slider {
+   padding-bottom: 50px;
+}
+#main.store_wrap .section_2 .swiper-pagination .swiper-pagination-bullet {
+   width: 10px;
+   height: 10px;
+   opacity: 1;
+   background: #dddddd;
+   transition: all 0.3s ease;
+}
+#main.store_wrap .section_2 .swiper-pagination .swiper-pagination-bullet-active {
+   width: 30px;
+   background: #cc0c0c;
+   border-radius: 10px;
+}
+#main.store_wrap .section_3 {
+   background: #fff;
+   height: 908px;
+   width: 100%;
+   padding: 0 15px;
+}
+#main.store_wrap .section_3 h2 {
+   padding: 35px 0;
+   font-size: 22px;
+   color: #000;
+   font-weight: bold;
+}
+#main.store_wrap .section_3 select {
+   display: block;
+   outline: none;
+   height: 40px;
+   line-height: 40px;
+   padding-left: 15px;
+   font-size: 16px;
+   color: #999;
+   font-weight: 500;
+   border: 2px solid #999;
+   background: #fff;
+}
+#main.store_wrap .section_3 .m_ad {
+   margin-bottom: 15px;
+   width: 100%;
+}
+#main.store_wrap .section_3 .s_ad {
+   width: 50%;
+}
+#main.store_wrap .section_3 option {
+   display: block;
+   outline: none;
+}
+#main.store_wrap .section_3 {
+   width: 100%;
+   position: relative;
+}
+#main.store_wrap .section_3 h3 {
+   font-size: 16px;
+   color: #999;
+   font-weight: 500;
+   padding: 30px 0;
+}
+#main.store_wrap .section_3 h3 span {
+   color: #cc0c0c;
+   font-weight: bold;
+}
+#main.store_wrap .section_3 .post_wrap .post {
+   border-top: 4px solid #cc0c0c;
+}
+#main.store_wrap .section_3 .post_wrap .post li a {
+   padding-left: 5px;
+   display: block;
+   height: 108px;
+   border-bottom: 1px solid #999;
+   background: url('./../images/s_search.png') no-repeat right 10px top 20px;
+   background-size: 16px;
+}
+#main.store_wrap .section_3 .post_wrap .post li a h4 {
+   padding-top: 20px;
+   font-size: 16px;
+   color: #000;
+   font-weight: 500;
+}
+#main.store_wrap .section_3 .post_wrap .post li a h5 {
+   padding: 10px 0;
+   font-size: 13px;
+   color: #666666;
+}
+#main.store_wrap .section_3 .post_wrap .post li a span {
+   display: inline-block;
+   height: 25px;
+   line-height: 23px;
+   text-align: center;
+   border-radius: 12.5px;
+   font-size: 13px;
+}
+#main.store_wrap .section_3 .post_wrap .post li a .s_1 {
+   width: 65px;
+   background: #fff;
+   border: 1px solid #666;
+   color: #666;
+   margin-right: 6px;
+}
+#main.store_wrap .section_3 .post_wrap .post li a .s_2 {
+   width: 100px;
+   color: #666;
+   font-size: 13px;
+   background: #c00c0c;
+   color: #ffc425;
+   font-weight: bold;
+}
+#main.store_wrap .section_3 .post_wrap .tab_wrap {
+   overflow: hidden;
+   position: relative;
+   height: 20px;
+   margin-top: 30px;
+}
+#main.store_wrap .section_3 .post_wrap .tab_wrap .btn_left {
+   position: absolute;
+   top: 2px;
+   left: 20px;
+   background: url('./../images/t_l_ar.png') no-repeat;
+   background-size: 8px;
+}
+#main.store_wrap .section_3 .post_wrap .tab_wrap .btn_right {
+   position: absolute;
+   top: 2px;
+   right: 20px;
+   background: url('./../images/t_r_ar.png') no-repeat;
+   background-size: 8px;
+}
+#main.store_wrap .section_3 .post_wrap .tab_wrap button {
+   width: 8px;
+   height: 12px;
+   border: none;
+   cursor: pointer;
+   outline: none;
+   text-indent: -99999px;
+}
+#main.store_wrap .section_3 .post_wrap .tab_wrap .tab {
+   overflow: hidden;
+   text-align: center;
+}
+#main.store_wrap .section_3 .post_wrap .tab_wrap .tab li {
+   display: inline-block;
+   margin: 0 4px;
+}
+#main.store_wrap .section_3 .post_wrap .tab_wrap .tab li a {
+   font-size: 18px;
+   font-weight: bold;
+   color: #666666;
+   transition: all 0.3s ease;
+}
+#main.store_wrap .section_3 .post_wrap .tab_wrap .tab li.on a {
+   color: #cc0c0c;
+}

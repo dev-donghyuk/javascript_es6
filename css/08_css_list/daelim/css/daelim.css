@@ -1,0 +1,30 @@
+@charset "UTF-8";
+	body{font-family: 'Noto Sans KR', sans-serif;font-size:16px;letter-spacing:-1px;color:#000;}
+	#header_wrap{position:fixed;left:0;top:0;width:100%;background:#fff;}
+	#header{width:100%;border-bottom:1px solid #c8c8c8;}
+	#header .header_inner{width:1200px;height:70px;margin:0 auto;}
+	/*------------------------------------------------------------------logo-----------------------*/
+	#header .header_inner h1{float:left;margin-top:22px;}
+	/*------------------------------------------------------------------gnb-----------------------*/
+	#header .header_inner .gnb{float:left;margin-left:20px;}
+	#header .header_inner .gnb>li{position:relative;float:left;}
+	#header .header_inner .gnb>li>a{color:#222222;font-weight:bold;height:70px;line-height:70px;display:block;margin-left:62px;font-weight:bold;}
+	#header .header_inner .gnb>li:hover>a{color:#002b5c;}
+	#header .header_inner .gnb>li>.mark{position:absolute;left:35px;top:28px;width:3px;height:16px;background:#002b5c;display:none;} 
+	#header .header_inner .gnb>li:hover>.mark{display:block;}
+	/*------------------------------------------------------------------depth2-----------------------*/
+	#header .header_inner .gnb>li>.depth2{position:absolute;left:50px;top:71px;padding:20px 0 15px 0;border-left:1px solid #eee;display:none;}
+	#header .header_inner .gnb>li>.depth2 li{margin-bottom:10px;padding-left:20px;}
+	#header .header_inner .gnb>li>.depth2 li a{display:block;width:90px;font-size:14px;color:#717171;}
+	#header .header_inner .gnb>li>.depth2 li a:hover{color:#002b5c;}
+	/*------------------------------------------------------------------util-----------------------*/
+	#header .header_inner .util{float:right;margin-top:22px;}
+	#header .header_inner .btn_serch,#header .header_inner .btn_m{background:#fff;border:none;cursor:pointer;outline:none;vertical-align:middle;}
+	#header .header_inner .util .btn_rang{display:inline-block;width:27px;height:10px;text-indent:-99999px;background:url("./../images/ico_mTopetc02.png")no-repeat;margin:0 20px;vertical-align:middle;}
+	/*------------------------------------------------------------------tbl-----------------------*/
+	#tbl caption{position:absolute;top:99999px;}
+	#tbl{padding:140px 0 70px;}
+	#tbl .tbl_notice{width:1200px;margin:0 auto;}
+	#tbl th{border:1px solid #ccc;height:40px;background:#eee;font-weight:bold;}
+	#tbl td{border:1px solid #ccc;height:35px;text-align:center;}
+	#tbl tr .blue{color:#002b5c;font-weight:bold;}

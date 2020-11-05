@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>맘앤콕</title>
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap" rel="stylesheet">
+  <link href="./css/jquery.bxslider.css" type="text/css" rel="stylesheet">
+  <script src="./js/jquery-3.0.0.min.js"></script>
+  <script src="./js/jquery.bxslider.js"></script>
+	<style>
+		body{font-family: 'Nanum Gothic', sans-serif;}
+		/*header*/
+		#header_wrap{position:absolute;left:0;top:0;background:rgba(255,255,255,0.95);width:100%;z-index:9999;}
+		#header{width:100%;border-bottom:1px solid #eee;}	
+		#header .header_inner{width:1100px;height:90px;margin:0 auto;}
+		/*logo*/
+		#header .header_inner .logo{float:left;margin:33px 45px 0 0;}
+		#header .header_inner .logo a{display:block;text-indent:-99999px;background:url("./images/logo.png")no-repeat;width:146px;height:28px;}
+		/*gnb*/
+		#header .header_inner .gnb{float:left;z-index:9999;}
+		#header .header_inner .gnb>li{position:relative;float:left;}
+		#header .header_inner .gnb>li>a{display:block;font-size:20px;font-weight:700;color:#2d2723;padding:0 31px;height:90px;line-height:90px;}
+		#header .header_inner .gnb>li>a:after{content:'';background:url("./images/gnb_depth1_arr.gif")no-repeat center top;position:absolute;left:31px;right:31px;bottom:-5px;height:7px;display:none;}
+		#header .header_inner .gnb>li:hover>a::after{display:block;}
+		/*depth2*/
+		#header .header_inner .gnb>li>.depth2{position:absolute;left:33px;top:91px;padding:29px 0;display:none;z-index:9999;}
+		#header .header_inner .gnb>li>.depth2 li a{display:block;width:162px;color:#444;font-size:14px;height:36px;line-height:36px;font-weight:700;}
+		#header .header_inner .gnb>li>.depth2 li a:hover{color:#ff4057;}
+		/*util*/
+		#header .header_inner .util{float:left;margin:39px 0 0 41px;}
+		#header .header_inner .util li{float:left;margin-right:12px;}
+		#header .header_inner .util li a{color:#777;font-size:12px;font-weight:700;}
+		#header .header_inner .util li a:hover{color:#ff4057;}
+		/*sns*/
+		#header .header_inner .sns{float:right;margin-top:35px;}
+		#header .header_inner .sns a{margin-left:5px;}
+		#header .header_inner .sns>button{width:22px;height:22px;outline:none;cursor:pointer;border:none;text-indent:-99999px;margin-left:5px;}
+		#header .header_inner .sns .btn_like{background:url("./images/hd_ico_f.png")no-repeat;}
+		#header .header_inner .sns .btn_search{background:url("./images/hd_ico_s.png")no-repeat;}
+		/*search_box*/
+		#header .header_inner .sns .search_box{position:absolute;left:997px;top:80px;display:none;}
+		#header .header_inner .sns .search_box::before{content:'';position:absolute;right:-6px;top:0;background:url("./images/corner1_shadow.png")no-repeat;width:10px;height:9px;}
+		#header .header_inner .sns .search_box::after{content:'';position:absolute;left:4px;top:5px;background:rgba(0,0,0,0.2);width:100%;height:100%;}
+		#header .header_inner .sns .search_box .search_box_inner{position:relative;width:500px;height:50px;box-sizing:border-box;border:2px solid #ff4057;z-index:100;}
+		#header .header_inner .sns .search_box .search_box_inner::before{content:'';position:absolute;right:-2px;top:-8px;width:10px;height:9px;background:url("./images/corner1.png")no-repeat;}
+		#header .header_inner .sns .search_box fieldset{border:none;}
+		#header .header_inner .sns .search_box legend{position:absolute;top:-99999px;}
+		#header .header_inner .sns .search_box .search_box_inner input{width:448px;height:46px;border:none;outline:none;float:left;box-sizing:border-box;padding:10px 20px;}
+		#header .header_inner .sns .search_box  .search_box_inner button{text-indent:-99999px;background:url("./images/hd_srch_btn.gif")no-repeat;width:48px;height:46px;border:none;cursor:pointer;outline:none;float:left;}
+		/*slider*/
+		#slider{margin-top:-59px;}
+		#slider .slider_box a{display:block;height:400px;}
+		#slider .slider_box .l_1 a{background:url("./images/06ffba12-66e3-499d-8eb0-f7cbf0d1110f.jpg")no-repeat center top;background-size:2560px;}
+		#slider .slider_box .l_2 a{background:url("./images/8eda289e-4f95-4f6b-8f0f-6031feddb7e1.jpg")no-repeat center top;background-size:2560px;}
+		#slider .slider_box .l_3 a{background:url("./images/08870f2d-4712-430a-93d2-33993552ca95.jpg")no-repeat center top;background-size:2560px;}
+		#slider .slider_box .l_4 a{background:url("./images/a8184ef2-6eea-4292-9b4d-a2e6edcafed9.jpg")no-repeat center top;background-size:2560px;}
+		#slider .slider_box .l_5 a{background:url("./images/cc9eed6f-bb35-487e-b715-e417b891b63a.jpg")no-repeat center top;background-size:2560px;}
+		#slider .slider_box .l_6 a{background:url("./images/f99a07f0-e781-453c-ba68-5d61c898366e.jpg")no-repeat center top;background-size:2560px;}
+	</style>
+ </head>
+ <body>
+  <div id="header_wrap">
+	<div id="header">
+		<div class="header_inner">
+			<h1 class="logo"><a href="index.html">맘앤톡로고</a></h1>
+			<ul class="gnb">
+				<li>
+					<a href="#">교육 매거진</a>
+					<ul class="depth2">
+						<li><a href="#">교육 멘토링</a></li>
+						<li><a href="#">스페셜 칼럼</a></li>
+						<li><a href="#">교육 이슈</a></li>
+						<li><a href="#">기자단</a></li>
+						<li><a href="#">자녀성향검사</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">커뮤니티</a>
+					<ul class="depth2">
+						<li><a href="#">자유게시판</a></li>
+						<li><a href="#">정보게시판</a></li>
+						<li><a href="#">익명게시판</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">이벤트</a>
+					<ul class="depth2">
+						<li><a href="#">이벤트</a></li>
+						<li><a href="#">출석체크</a></li>
+						<li><a href="#">맘앤톡 리서치</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">포인트몰</a>
+					<ul class="depth2">
+						<li><a href="#">상품보기</a></li>
+						<li><a href="#">이용안내</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="util">
+				<li><a href="#">로그인</a></li>
+				<li><a href="#">회원가입</a></li>
+				<li><a href="#">고객센터</a></li>
+			</ul>
+			<div class="sns">
+				<a href="#"><img src="./images/hd_ico_naver.png" alt="네이버 블로그" /></a>
+				<a href="#"><img src="./images/hd_ico_k.png" alt="카카오 스토리" /></a>
+				<button type="button" class="btn_like">즐겨찾기</button>
+				<button type="button" class="btn_search">검색</button>
+				<div class="search_box">
+					<form>
+						<fieldset>
+							<legend>검색창</legend>
+							<div class="search_box_inner">
+								<input type="text">
+								<button type="submut">검색버튼</button>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+	<div id="slider">
+		<ul class="slider_box">
+			<li class="l_1"><a href="#"></a></li>
+			<li class="l_2"><a href="#"></a></li>
+			<li class="l_3"><a href="#"></a></li>
+			<li class="l_4"><a href="#"></a></li>
+			<li class="l_5"><a href="#"></a></li>
+			<li class="l_6"><a href="#"></a></li>
+		</ul>
+	</div>
+	<script>
+	$(function(){
+		var li,header_wrap,depth2,btn_search,search_box
+		li=$('.gnb>li');
+		header_wrap=$('#header_wrap');
+		depth2=$('.depth2');
+		btn_search=$('.btn_search');
+		search_box=$('.search_box');
+
+		$(li).mouseenter(function(){
+			$(header_wrap).stop().animate({'height':328},300);
+			$(depth2).stop().fadeIn(300);
+		});
+		$(header_wrap).mouseleave(function(){
+			$(header_wrap).stop().animate({'height':90},300);
+			$(depth2).stop().fadeOut(300);
+		});
+		$(btn_search).click(function(){
+			$(search_box).stop().toggle();
+		});
+		
+		$('.slider_box').bxSlider({
+			auto:true
+		});
+	});
+	</script>
+ </body>
+</html>
