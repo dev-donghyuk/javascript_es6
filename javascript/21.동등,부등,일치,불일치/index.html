@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body></body>
+  <script defer>
+    // ==연산자
+    // - 왼쪽과 오른쪽 값이 같으면 true, 다르면 false
+    // - 값의 타입은 비교하지 않음 1과 "1"은 같음
+
+    console.log(1 == "1"); // true
+
+    var value;
+    console.log(value == undefined); // true
+    console.log(value == null); // true 타입은 비교하지 않기 때문
+
+    // !=연산자
+    // - 부등 연산자
+    // - 왼쪽과 오른쪽 값이 같으면 false, 다르면 true
+    console.log(1 != 2); // false
+
+    // ===연산자
+    // - 왼쪽과 오른쪽 값과 타입이 같으면 true, 다르면 false
+    console.log(1 === "1"); // false
+
+    var value_2;
+    console.log(value_2 == null); //true
+    console.log(value_2 === null); //false
+
+    // !=연산자
+    // - 부등 연산자
+    // - 왼쪽과 오른쪽 값또는 타입이 다르면 false, 둘다 같으면 true
+    console.log(1 != 2); // false
+  </script>
+</html>
