@@ -1,4 +1,4 @@
-# 프론트엔드 기초
+# 프론트엔드 기초 공부
 
 사용언어 : css, javascript, jquery,es6
 
