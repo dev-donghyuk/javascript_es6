@@ -1,0 +1,9 @@
+[Javascript1]
+
+-  Object는 객체
+   ex){key:value}
+
+-  object는 인스턴스
+   ex)
+   var test = new Number("123")
+   console.log(test) //**proto**와 파라미터값을 프리미티브 값으로 변경한 [[PrimitiveValue]]가 있음
