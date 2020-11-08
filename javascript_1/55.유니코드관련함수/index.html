@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title></title>
+   </head>
+   <body></body>
+   <script defer>
+      //charCodeAt()
+      // - 인덱스 번째의 문자를 유니코드의 코드 포인트 값을 반환
+      // - 인덱스가 문자열 길이보다 크면 NaN반환
+      var value = '1';
+      console.log(value.charCodeAt(0)); //49
+
+      // fromCharCode()
+      // - 파라미터의 유니코드를 문자열로 변환하고 연결하여 반환
+      console.log(String.fromCharCode(49, 65, 97, 44032)); // 1Aa가
+
+      // localeCompare()
+      // - 값을 비교하여 위치를 나타내는 값으로 반환
+      // 위치 값:1(앞),0(같음),-1(뒤)
+      var value_1 = '나';
+      console.log(value.localeCompare('가')); //1
+   </script>
+</html>

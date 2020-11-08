@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title></title>
+   </head>
+   <body></body>
+   <script defer>
+      // new Function()
+      // - 함수 인스턴스 생성
+      var obj = new Function('one', 'two', 'return one+two;');
+      console.log(obj(100, 200)); //300
+      var obj_1 = new Function('return 1+2;');
+      console.log(obj_1); //3
+
+      //Function()
+   </script>
+</html>

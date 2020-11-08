@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title></title>
+   </head>
+   <body></body>
+   <script defer>
+      // hasOwnProperty
+      // - 인스턴스에 파라미터 키가 존재하면 true
+      var obj = { value: 123 };
+      console.log(obj.hasOwnProperty('value')); //true
+
+      var obj_2 = { value: undefined };
+      console.log(obj_2.hasOwnProperty('value')); //true
+
+      // propertyIsEnumerable()
+      // - 열거가 가능하면 true
+   </script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title></title>
+   </head>
+   <body></body>
+   <script defer>
+      //   빌트인 Object 특징
+      // - 인스턴스를 만들 수 있는 모든 빌트인 오브젝트의 __proto__에 Object.prototype의 6개 메소드가 설정됨
+      // - 따라서 빌트인 오브젝트로 만든 인스턴스에도 설정됨
+
+      //   isPrototypeOf()
+      // - object위치에 작성한 prototype이 존개하면 true
+      var numObj = new Number(123);
+      console.log(Object.prototype.isPrototypeOf(numObj)); //true
+
+      // toString
+      // - 인스턴스 타입을 문자열로 표시
+      // - 오브젝트에 toString이 있으면 toString이 호출 없으면 Object의 toString이 호출됨
+   </script>
+</html>
