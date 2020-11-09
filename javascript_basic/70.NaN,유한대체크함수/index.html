@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title></title>
+   </head>
+   <body></body>
+   <script defer>
+      // isNaN()
+      // - 값의 NaN여부 반환
+      // - 숫자 값이 아니면 true 반환
+      // - 값이 숫자로 변환되면 숫자로 인식
+      console.log(NaN === NaN); //false
+      console.log(Object.is(NaN, NaN)); //true
+
+      // isFinite()
+      // - 값이 infinity나 NaN이면 false 반환
+      // - 값이 숫자로 변환되면 숫자로 인식
+      console.log(isFinite('ABC')); //false
+      console.log(isFinite(123)); //true
+   </script>
+</html>

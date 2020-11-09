@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title></title>
+   </head>
+   <body></body>
+   <script defer>
+      // sort()
+      var value = [101, 26, 7, 1234];
+      value.sort(function (one, two) {
+         return one - two;
+      });
+      console.log(value); //[7,26,101,1234]
+
+      // reverse()
+      // - 배열의 엘리먼트 위치를 역순으로 바꿈
+      // - 원본도 바뀜
+      var value_1 = [1, 3, 7, 5].reverce();
+      console.log(value_1); //[5,7,3,1]
+   </script>
+</html>

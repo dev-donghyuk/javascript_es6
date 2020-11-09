@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title></title>
+   </head>
+   <body></body>
+   <script defer>
+      // shift()
+      // - 배열의 첫 엘리먼트 삭제
+      // - 빈 배열이면  undefined가 반환됨
+      var value_1 = [1, 2, 34];
+      console.log(value_1.shift()); //1
+      console.log(value_1); //[2,34]
+      console.log([].shift()); //undefined
+
+      // pop()
+      // - 배열의 마지막 엘리먼트를 삭제
+      // 빈 배열이면 undefined 반환
+      var value_2 = [1, 2, 34];
+      console.log(value_2.pop()); //34
+      console.log(value_2); //[1,2]
+      console.log([].pop()); //undefined
+
+      // splice()
+      // - 엘리먼트를 삭제하고 삭제한 엘리먼트 반환
+      // - 삭제한 위치에 세번째 파라미터 삽입
+      // - 파라미터를 작성하지 않으면 삭제를 안한다
+      var value_3 = [1, 2, 3, 4, 5];
+      console.log(value_3.splice(1, 3)); //[2,3,4]
+      console.log(value_3); //[1,5]
+
+      var value_4 = [1, 2, 3, 4, 5];
+      console.log(value_4.splice(1, 3, 'A', 'B')); //[2,3,4]
+      console.log(value_4); //[1,A,B,5]
+   </script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title></title>
+   </head>
+   <body></body>
+   <script defer>
+      // join()
+      // - 엘리먼트와 분리자를 하나씩 결합하여 문자열로 연결
+      var value = [1, 2, 3];
+      var result = value.join('##');
+      console.log(result); //1##2##3
+      console.log(typeof result); //string
+
+      console.log(value.join()); //1,2,3
+      console.log(value.join('')); //123
+
+      // toString()
+      var test = ['A', 'B', 'C'].toString();
+      console.log(test); //A,B,C
+      console.log([['가'], ['다']].toString()); //가,다
+   </script>
+</html>
