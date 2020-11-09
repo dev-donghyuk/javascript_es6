@@ -1,4 +1,4 @@
-# Javascript_1
+# 중요부분 
 
 ## Object는 객체
 
