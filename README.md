@@ -1,1 +1,3 @@
-# Javascript 기본
+# Javascript
+
+# ES6
