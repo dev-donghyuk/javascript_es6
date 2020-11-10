@@ -1,2 +1,3 @@
-# Javascript와ES6
-Javascript와ES6입니다.
+# JavascriptES6
+
+# ES6
