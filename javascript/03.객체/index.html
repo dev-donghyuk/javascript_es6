@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title></title>
+   </head>
+   <body></body>
+   <script defer>
+      /****객체***/
+
+      // - 원시타입(num,str,bool,undefined,null,)을 제외한 나머지 값들(함수, 배열, 정규표현식)은 모두 객체이다.
+      // - 자바스크립트의 객체는 키와 값으로 구성된 프로퍼티들의 집합이다. 값에는 함수도 사용할 수 있으며 프로퍼티 값이 함수일 경우 메소드라 칭한다.
+      // - 자바스크립트의 객체는 객체지향의 상속을 구현하기 위해 프로토타입(prototype)이라고 불리는 객체의 프로퍼티와 메소드를 상속받을 수 있다. 이 프로토타입은 타 언어와 구별되는 중요한 개념이다.
+
+      /***객체 생성방법***/
+
+      // - 객체 리터럴
+      var obj_1 = {};
+
+      // - Object 생성자 함수 => 이것을 축약하여 단순화 한에 위에 객체 리터럴이다.
+      var obj_2 = new Object(); //{}
+
+      // - 생성자 함수
+      // - this는 생성자 함수가 생성할 인스턴스를 가리킨다.
+      function Person(name, gender) {
+         this.name = name;
+         this.gender = gender;
+         this.sayHello = function () {
+            console.log('Hi! My name is ' + this.name);
+         };
+      }
+      // 인스턴스의 생성
+      var person_1 = new Person('Lee', 'male');
+
+      /***객체 프로퍼티 접근***/
+
+      // - 프로퍼티 값 읽기
+      var person_2 = {
+         'first-name': 'Ung-mo',
+         gender: 'male',
+      };
+      console.log(person_2['first-name']);
+      console.log(person_2['gender']);
+      console.log(person_2.gender);
+
+      // - 프로퍼티 값 갱신
+      person_2['gender'] = 'female';
+
+      // - 프로퍼티 값 동적 생성
+      person_2.age = 20;
+
+      // - 프로퍼티 삭제
+      delete person.gender;
+      console.log(person.gender); //undefined
+
+      /*** Pass-by-reference ***/
+      // - object type을 객체 타입 또는 참조 타입이라 한다. 참조 타입이란 객체의 모든 연산이 실제값이 아닌 참조값으로 처리됨을 의미한다.
+      // - 원시 타입은 값이 한 번 정해지면 변경할 수 없지만, 객체는 변경 추가 삭제가 가능하므로 변경 가능한 값이다.
+
+      // 1
+      var foo = { val: 10 };
+      var bar = { val: 10 };
+
+      console.log(foo.val, bar.val); // 10 10
+      console.log(foo === bar); // false
+
+      var baz = bar;
+
+      console.log(baz.val, bar.val); // 10 10
+      console.log(baz === bar); // true
+
+      // 2
+      var a = {},
+         b = {},
+         c = {}; // a, b, c는 각각 다른 빈 객체를 참조
+      console.log(a === b, a === c, b === c); // false false false
+
+      a = b = c = {}; // a, b, c는 모두 같은 빈 객체를 참조
+      console.log(a === b, a === c, b === c); // true true true
+   </script>
+</html>
