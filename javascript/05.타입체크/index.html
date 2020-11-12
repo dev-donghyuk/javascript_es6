@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title></title>
+   </head>
+   <body></body>
+   <script defer>
+      /****타입체크***/
+
+      // typeof
+      // - null과 배열의 경우 object, 함수의 경우 function를 반환하고, Date, RegExp, 사용자 정의 객체 등 거의 모든 객체의 경우, object를 반환한다. 따라서 typeof는 null을 제외한 원시 타입을 체크하는 데는 문제가 없지만 객체의 종류까지 구분하여 체크하려할 때는 사용하기는 곤란하다.
+      console.log(typeof ''); // string
+      console.log(typeof 1); // number
+      console.log(typeof NaN); // number
+      console.log(typeof true); // boolean
+      console.log(typeof []); // object
+      console.log(typeof {}); // object
+      console.log(typeof new String()); // object
+      console.log(typeof new Date()); // object
+      console.log(typeof /test/gi); // object
+      console.log(typeof function () {}); // function
+      console.log(typeof undefined); // undefined
+      console.log(typeof null); // object (설계적 결함)
+      console.log(typeof undeclared); // undefined (설계적 결함)
+
+      // ---------------------------------------------------------------------------------
+
+      // Object.prototype.toString
+
+      var obj = new Object();
+      obj.toString(); // [object Object]
+
+      console.log(Object.prototype.toString.call('')); // [object String]
+      console.log(Object.prototype.toString.call(new String())); // [object String]
+      console.log(Object.prototype.toString.call(1)); // [object Number]
+      console.log(Object.prototype.toString.call(new Number())); // [object Number]
+      console.log(Object.prototype.toString.call(NaN)); // [object Number]
+      console.log(Object.prototype.toString.call(Infinity)); // [object Number]
+      console.log(Object.prototype.toString.call(true)); // [object Boolean]
+      console.log(Object.prototype.toString.call(undefined)); // [object Undefined]
+      console.log(Object.prototype.toString.call()); // [object Undefined]
+      console.log(Object.prototype.toString.call(null)); // [object Null]
+      console.log(Object.prototype.toString.call([])); // [object Array]
+      console.log(Object.prototype.toString.call({})); // [object Object]
+      console.log(Object.prototype.toString.call(new Date())); // [object Date]
+      console.log(Object.prototype.toString.call(Math)); // [object Math]
+      console.log(Object.prototype.toString.call(/test/i)); // [object RegExp]
+      console.log(Object.prototype.toString.call(function () {})); // [object Function]
+      console.log(Object.prototype.toString.call(document)); // [object HTMLDocument]
+      console.log(Object.prototype.toString.call(argument)); // [object Arguments]
+      console.log(Object.prototype.toString.call(undeclared)); // ReferenceError
+
+      // getType
+      // - “[object”와 “]”를 제외하고 타입을 나타내는 문자열만을 추출하였다.
+
+      console.log(getType('')); // String
+      console.log(getType(1)); // Number
+      console.log(getType(true)); // Boolean
+      console.log(getType(undefined)); // Undefined
+      console.log(getType(null)); // Null
+      console.log(getType({})); // Object
+      console.log(getType([])); // Array
+      console.log(getType(/test/i)); // RegExp
+      console.log(getType(Math)); // Math
+      console.log(getType(new Date())); // Date
+      console.log(getType(function () {})); // Function
+
+      // ---------------------------------------------------------------------------------
+
+      // instanceof
+      // - Object.prototype.toString를 사용하여 객체의 종류(일반 객체, 배열, Date, RegExp, Function, DOM 요소 등)까지 식별할 수 있는 타입 체크 기능을 작성하였다. 그런데, 이 방법으로는 객체의 상속 관계까지 체크할 수는 없다.
+
+      function Person() {}
+      const person = new Person();
+
+      console.log(person instanceof Person); // true
+      console.log(person instanceof Object); // true
+   </script>
+</html>
