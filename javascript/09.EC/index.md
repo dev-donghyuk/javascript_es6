@@ -95,4 +95,109 @@ foo();
 
 <br/>
 
+1. 컨트롤이 전역 실행 컨텍스트에 진입하기 전, 글로벌 오브젝트(GO : Built-In, BOM, DOM)생성
+
+<br />
+
+2. 전역코드에 컨트롤이 진입 후, 전역 실행 컨텍스트 생성되고 실행 컨텍스트 스택에 밑에 쌓임(LIFO : 후입선출)
+
+<br />
+
+3. 전역 실행 컨텍스트에 스코프 체인의 생성과 초기화 실행, 0번째 리스트에 GO 담음
+
+<br />
+
+4. 변수의 객체화(VO에 프로퍼티와 값을 추가하는 것) 실행, 전역 실행 컨텍스트에 VO는 GO이다.
+
+<br />
+
+5. 함수 foo의 선언 처리(함수 호이스팅),
+
+```sh
+  GO => {
+        foo:function object,
+        [[Scopes]]:[Global] (Scope Chain)
+}
+```
+
+- [[Scope]]프로퍼티는 자신을 포함하는 외부 함수의 실행 컨텍스트가 소며라여도 참조할 수 있다. 이것이 클로저이다.
+
+<br />
+
+6. 변수 x의 선언 처리(변수 호이스팅),
+
+```sh
+GO => {
+          foo:function object,
+          x:undefined
+          [[Scopes]]:[GO] (Scope Chain)
+        }
+```
+
+<br />
+
+7. 전역 컨텍스트의 this value 결정, this는 GO이다.
+
+<br />
+
+8. 변수의 할당,
+
+```sh
+GO => {
+          foo:function object,
+          x:undefined
+          [[Scopes]]:[GO] (Scope Chain)
+        }
+```
+
+<br/>
+
+9. 함수 foo의 실행, 함수 실행 컨텍스트\_1가 생성되고 전역 실행 컨텍스트 스택에 위에 쌓임(LIFO : 후입선출)
+
+<br />
+
+10. 함수 실행 컨텍스트\_1의 스코프체인의 AO_1에 대한 레퍼런스 설정
+
+<br />
+
+11. 함수 실행 컨텍스트\_1의 스코프체인의 AO_1에 대한 레퍼런스 설정 후, 0번째 리스트에 AO_1를 담고 1번째 리스트에 GO를 담음
+
+<br />
+
+12. 변수의 객체화 실행, 이 함수 실행 컨텍스트\_1에 VO는 AO_1다.
+
+<br />
+
+13. 함수 bar의 선언 처리(함수 호이스팅), bar의[[Scope]]는 AO_1의 스코프체인이다., 변수 y의 선언처리(변수 호이스팅)
+
+```sh
+GO => {
+          bar:function object,
+          y:undefined
+          [[Scopes]]:[AO_1,GO] (Scope Chain)
+        }
+```
+
+<br/>
+
+14. 함수 실행 컨텍스트\_1의 this value 결정(내부함수이므로 GO가 설정됨)
+
+<br />
+
+15. 변수의 할당,
+
+```sh
+AO_1 => {
+          bar:function object,
+          y:'yyy'
+          [[Scopes]]:[AO_1,GO] (Scope Chain)
+        }
+```
+
+<br />
+
+16. 함수 bar의 실행, 함수 bar가 실행되기 시작하면 새로운 실행 컨텍스트가 생성되어 함수실행 컨텍스트\_1 위에 쌓인다.
+
+<br />
+
 [링크참조] https://poiemaweb.com/js-execution-context
